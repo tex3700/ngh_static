@@ -1,0 +1,147 @@
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1728px;
+    background: center/cover url("img/Rectangle 28.png") #F7F9FC;
+}
+
+.header {
+    position: relative;
+    background: #06255B;
+}
+
+.cover-rectangle-right-top {
+    background: url("img/Group 2348.png");
+    /*background-origin: content-box;*/
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 140vh;
+    z-index: 2;
+    width: 17%;
+    height: 50%;
+
+}
+
+.cover-rectangle-right-bottom {
+    background: url("img/Rectangle 34.png");
+    background-origin: content-box;
+    background-size: cover;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 90vh;*/
+    /*z-index: 1;*/
+    float: right;
+    margin-top: 8vh;
+    width: 25vw;
+    height: 60%;
+
+}
+
+.cover-rectangle {
+    background: url("img/Rectangle 28 top.png");
+    /*background-origin: content-box;*/
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.main-header {
+    background: linear-gradient(90deg, #06255B 0%, rgba(6, 37, 91, 0.00) 40%),
+                linear-gradient(180deg, #06255B 0%, rgba(6, 37, 91, 0.00) 60%),
+                center / contain no-repeat url("img/WinterDrillingII 1.jpg"), #06255B;
+    background-origin: content-box;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+}
+
+.main-services {
+    background: #06255B;
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    z-index: -1;
+}
+
+.main-advantages {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-experience {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-nav {
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.main-logo-img {
+    max-width: 200px;
+}
+
+.main-menu-button {
+    display: flex;
+    margin-right: 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 120% */
+    letter-spacing: 0.2px;
+    margin: 0 16px 0 16px;
+}
+
+.main-menu a:hover {
+    text-decoration-line: underline overline;
+}
+
+.main-menu a:active {
+    background-color: #ddd;
+    color: black;
+}
+
+.languages {
+    background: #FFFFFF;
+    border: 1px solid #eee;
+    margin: 0 1px 0 16px;
+    padding: 16px 16px 0 30px;
+}
+
+.language-link {
+    margin-right: 16px;
+}
+
+.contacts-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 120% */
+    letter-spacing: 0.3px;
+    background: #DA5D24;
+    padding: 16px 27px;
+}
+
+.contacts-button:hover {
+    background: #BA4E1D;
+}
