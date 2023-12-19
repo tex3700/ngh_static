@@ -218,11 +218,6 @@ h2 {
     height: 115px;
 }
 
-.header-rectangle-1:hover {
-    width: 115px;
-    height: 115px;
-}
-
 .header-rectangle-2 {
     width: 90px;
     height: 90px;
@@ -337,6 +332,13 @@ h2 {
     width: 70%;
 }
 
+.chem-f-2 {
+    width: 10%;
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+}
+
 .cover-rectangle {
     background: url("img/Rectangle 28 top.png");
     /*background-origin: content-box;*/
@@ -398,23 +400,176 @@ h2 {
 .services-rectangle-group {
     transform: rotate(45deg);
     position: absolute;
-    top: 32%;
-    left: 55%;
+    top: 29%;
+    left: 46%;
     z-index: 9;
 }
 
 .services-rectangle {
-    width: 160px;
-    height: 160px;
+    width: 13vw;
+    height: 13vw;
     /*transform: rotate(45deg);*/
     flex-shrink: 0;
     border: 0.986px solid #D5D5D5;
     background: #FFF;
+    margin: 3vw;
+}
+
+.services-rectangle p {
+    color: #313131;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    letter-spacing: 0.296px;
+    margin-bottom: 20px;
+}
+
+.twist-rectangle {
+    position: relative;
+}
+
+#tr-right {
+    position: absolute;
+    margin: 0;
+    left: 100%;
+}
+
+#tr-left {
+    position: absolute;
+    margin: 0;
+    right: 100%;
+}
+
+.rectangle-link {
+    text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(9px, 65px) rotate(-45deg);
+}
+
+.rectangle-link:hover {
+    opacity: 80%;
+    transform: translate(15px, 65px) rotate(-45deg);
+}
+
+.main-bottom {
+    background: url("img/Rectangle 28 bottom.png");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
 }
 
 .main-advantages {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-advantages-heading {
+    max-width: 33%;
+    margin-top: 150px;
+}
+
+.main-advantages-heading h2{
+    color: #000;
+    text-align: center;
+}
+
+.main-advantages-subheading {
+    max-width: 24%;
+    color: #737B7D;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.3px;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+.main-advantages-cards {
+    display: flex;
+    justify-content: space-between;
+    background: no-repeat bottom url("img/Group 2364.png");
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.ma-vcard {
+    width: 16vw;
+    height: 60vh;
+    border: 1px solid #E2E2E2;
+    background: none;
+}
+
+.mac-content {
+    margin: 40px 25px;
+}
+
+.card-description {
+    color: #2F3034;
+    font-family: Mulish, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 17px */
+    letter-spacing: 0.3px;
+    margin-top: 70%;
+}
+
+.card-number {
+    color: #DA5D24;
+    font-family: Mulish, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 17px */
+    letter-spacing: 0.3px;
+}
+
+.card-plus {
+    margin-left: 15px;
+}
+
+.ma-vcard:hover p {
+    color: #FFFFFF !important;
+}
+
+#mac-1:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-size: cover;
+}
+
+#mac-2:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-size: cover;
+}
+
+#mac-3:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-size: cover;
+}
+
+#mac-4:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-size: cover;
+}
+
+#mac-5:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-size: cover;
+}
+
+#mac-6:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-size: cover;
 }
 
 .main-experience {
