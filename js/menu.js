@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (scrollPosition > 100) {
             header.style.background = "rgba(255,255,255,0.8)";
-            svgElement.classList.add('scroll-invert');
-            langElement.style.visibility = "hidden";
+            svgElement.style.backgroundImage = 'url("img/VecNGH1_S%201.svg")'
+            langElement.style.display = "none";
             document.querySelectorAll(".main-menu a").forEach(function(item) {
                 item.style.color = "#2F3034";
             });
         } else {
             header.style.background = "none";
-            svgElement.classList.remove('scroll-invert');
-            langElement.style.visibility = "visible";
+            svgElement.style.backgroundImage = 'url("img/VecNGH1_22_263 1.svg")'
+            langElement.style.display = "block";
             document.querySelectorAll(".main-menu a").forEach(function(item) {
                 item.style.color = "#FFF";
             });
