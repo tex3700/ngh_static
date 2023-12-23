@@ -342,15 +342,16 @@ h3 {
 }
 
 .cover-rectangle-right-bottom {
-    background: url("img/Rectangle 34.png");
+    background-image: url("img/Rectangle 34.png");
     background-origin: content-box;
     background-size: cover;
+    background-position-y: center;
     float: right;
-    margin-top: 8vh;
+    margin-top: 18vh;
     width: 25vw;
     height: 60%;
     display: flex;
-    justify-items: center;
+    justify-items: auto;
     align-items: center;
 }
 
@@ -376,10 +377,11 @@ h3 {
 }
 
 #header-img {
-    max-width: 45vw;
+    max-width: 55vw;
+    height: auto;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 40%;
 }
 
 .main-header {
@@ -430,14 +432,16 @@ h3 {
 .services-rectangle-group {
     transform: rotate(45deg);
     position: absolute;
-    left: 50%;
-    bottom: 12%;
+    left: 48%;
+    /*right: 30%;*/
+    /*top: 8%;*/
+    bottom: 15%;
     /*z-index: 0;*/
 }
 
 .services-rectangle {
-    width: 160px;
-    height: 160px;
+    width: 12vw;
+    height: 12vw;
     /*transform: rotate(45deg);*/
     flex-shrink: 0;
     border: 0.986px solid #D5D5D5;
