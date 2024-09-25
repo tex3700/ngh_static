@@ -1,0 +1,52 @@
+* {
+    margin: 0 auto;
+}
+
+html {
+    --polygon_gap: clamp(1.5rem, 3vw, 3rem);
+    --polygon_gap-neg: calc(var(--polygon_gap) * -1);
+}
+
+body {
+    background: #F7F9FC;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #F7F7F7;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 55px */
+    letter-spacing: -1.465px;
+}
+
+h2 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 40px */
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 28px */
+    letter-spacing: -1px;
+}
+
+.visibility-hidden {
+    /* visibility: hidden; */
+    display: none;
+}

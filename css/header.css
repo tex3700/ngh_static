@@ -1,0 +1,197 @@
+/* Heading and menu styles */
+
+.header {
+    position: relative;
+    background: #06255B;
+}
+
+.main-heading {
+    max-width: 55vw;
+    margin-bottom: 20px;
+}
+
+.main-nav {
+    display: flex;
+    padding-left: 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -20px;
+    z-index: 999;
+    margin-bottom: -70px;
+    background: none;
+}
+
+.main-logo {
+    width: 20vw;
+    height: 6vh;
+    margin-top: 20px;
+    background-image: url("/img/VecNGH1_22_263 1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-menu-button {
+    display: flex;
+    margin-right: 0;
+    margin-top: 18px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 120% */
+    letter-spacing: 0.2px;
+    margin: 0 8px 0 8px;
+}
+
+.main-menu a:hover {
+    text-decoration-line: underline overline;
+    color: #dddddd;
+}
+
+.main-menu a:active {
+    background-color: #ddd;
+    color: #2F3034;
+}
+
+.main-menu {
+    margin-top: 22px;
+}
+
+.languages {
+    background: #FFFFFF;
+    border: 1px solid #eee;
+    margin-left: 1px;
+    padding: 13px 10px 0 15px;
+    /*visibility: visible;*/
+    display: block;
+}
+
+.language-link {
+    margin-right: 12px;
+}
+
+.contacts-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 120% */
+    letter-spacing: 0.3px;
+    background: #DA5D24;
+    padding: 10px 27px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contacts-button:hover {
+    background: #BA4E1D;
+}
+
+.main-description {
+    float: left;
+    margin: 30vh 0 0 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-article p {
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 27.5px */
+    margin: 20px 0 0 0;
+}
+
+.main-article {
+    float: left;
+    margin-left: 0;
+}
+
+#ma-top {
+    max-width: 35vw;
+}
+
+#ma-bottom {
+    max-width: 25vw;
+}
+
+.main-description-buttons {
+    margin: 30px 0 0 0;
+    float: left;
+    position: relative;
+    z-index: 990;
+}
+
+.md-button-left {
+    border: 2px solid #FFF;
+    background: rgba(6, 37, 91, 0.60);
+    color: #FFF;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 120% */
+    letter-spacing: 0.3px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.md-button-left:hover {
+    color: #06255B;
+    background: #FFF;
+}
+
+.md-button-right {
+    background: #FFF;
+    color: #06255B;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    /* 120% */
+    letter-spacing: 0.3px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.md-button-right:hover {
+    color: #FFFFFF;
+    background: #ABB5C7;
+}
+
+#header-img {
+    max-width: 55vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+
+.main-header {
+    background: linear-gradient(90deg, #06255B 0%, rgba(6, 37, 91, 0.00) 40%),
+        linear-gradient(180deg, #06255B 0%, rgba(6, 37, 91, 0.00) 60%),
+        center / contain no-repeat url("/img/WinterDrillingII 1.jpg"), #06255B;
+    background-origin: content-box;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+
+}
