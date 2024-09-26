@@ -58,10 +58,10 @@ li {
 .services-rectangle-group {
     transform: rotate(45deg);
     position: absolute;
-    left: 48%;
+    left: 42vw;
     /*right: 30%;*/
     /*top: 8%;*/
-    bottom: 15%;
+    bottom: 2vh;
     /*z-index: 0;*/
 }
 
@@ -72,7 +72,7 @@ li {
     flex-shrink: 0;
     border: 0.986px solid #D5D5D5;
     background: #FFF;
-    margin: 3vw;
+    margin: 2vw;
 }
 
 .services-rectangle p {
@@ -93,12 +93,15 @@ li {
 }
 
 .services-rectangle:hover {
-    filter: drop-shadow(0px 15px 4px #d9d9d9);
-    width: 14vw;
-    height: 14vw;
-    transform: scale(1.2) translateY(1vw);
+    background-color: #2F3034;
+    filter: drop-shadow(7px 15px 7px rgba(6, 37, 91, 0.8));
+    width: 12vw;
+    height: 12vw;
+    transform: scale(1.1) translateY(2vh);
     transition: all 0.3s ease;
+    /* transition: filter 0.5s, transform 0.5s; */
 }
+
 
 .services-rectangle:hover .rectangle-description {
     display: block;
@@ -106,6 +109,13 @@ li {
 
 .services-rectangle:hover p {
     font-size: 12px;
+    color: #DA5D24;
+    transform: translate(1vw, -2vw);
+}
+
+.services-rectangle:hover .rectangle-description {
+    font-size: 13px;
+    color: #FFFFFF;
 }
 
 .services-rectangle:hover .cross-stitch::before {
@@ -133,7 +143,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translate(9px, 65px) rotate(-45deg);
+    transform: translate(0.48vw, 4.5vw) rotate(-45deg);
 }
 
 /* .rectangle-link:hover {
@@ -153,6 +163,59 @@ li {
     background-size: cover;
     width: 100%;
     height: 90%;
+}
+
+.reagent-card-wrapper {
+    text-align: center;
+    padding-top: 150px;
+    margin: 0 110px;
+}
+
+.reagent-card-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.reagent-card {
+    /* background-color: #F7F9FC; */
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reagent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reagent-card li {
+    color: #737B7D;
+    text-align: left;
+    padding: 0 0 5px 5px;
+}
+
+.reagent-card ul {
+    margin-bottom: 30px;
+}
+
+.reagent-card img {
+    max-width: 4vw;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.reagent-card h3 {
+    color: #2F3034;
+    font-family: Mulish, sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
 }
 
 .main-advantages {
@@ -192,17 +255,20 @@ li {
 
 .main-advantages-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
     background: no-repeat bottom url("/img/Group 2364.png");
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 .ma-vcard {
-    width: 16vw;
-    height: 54vh;
+    /* width: 16vw; */
+    min-height: 54vh;
     border: 1px solid #E2E2E2;
     background: none;
+    flex: 1;
 }
 
 .mac-content {
@@ -214,7 +280,7 @@ li {
     font-family: Mulish, sans-serif;
     font-size: 1.1em;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 100%;
     /* 17px */
     letter-spacing: 0.3px;
