@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>НГХ</title>
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
-    <link href="/css/header.css" rel="stylesheet" type="text/css">
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="/css/slider.css" rel="stylesheet" type="text/css">
-    <link href="/css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -19,16 +19,18 @@
             <div class="main-logo"></div>
         </a>
         <section class="main-menu">
-            <a class="menu-linc" href="#" target="_blank">Сервис</a>
-            <a class="menu-linc" href="#" target="_blank">Наши проекты</a>
-            <a class="menu-linc" href="#" target="_blank">Производство</a>
-            <a class="menu-linc" href="#" target="_blank">Наша компания</a>
-            <a class="menu-linc" href="#" target="_blank">Наши клиенты</a>
-            <a class="menu-linc" href="#" target="_blank">Карьера</a>
+            <a class="menu-linc" href="#service">Сервис</a>
+            <a class="menu-linc" href="#products">Продукция</a>
+            <a class="menu-linc" href="#reagents">Применение</a>
+            <a class="menu-linc" href="#">Документация</a>
+            <a class="menu-linc" href="#contacts">Контакты</a>
+<!--            <a class="menu-linc" href="#" target="_blank">Наша компания</a>-->
+<!--            <a class="menu-linc" href="#" target="_blank">Наши клиенты</a>-->
+<!--            <a class="menu-linc" href="#" target="_blank">Карьера</a>-->
         </section>
         <section class="main-menu-button">
             <button class="contacts-button" type="button" value="#">Написать</button>
-            <section class="languages">
+            <section class="languages visibility-hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <mask id="mask0_18_270" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12"
                         height="12">
@@ -80,9 +82,9 @@
         <section class="cover-rectangle-right-top">
             <a class="header-rectangle-1" href="#">
                 <span class="header-ground-rectangle-1"></span>
-                <p class="rectangle-text-link" id="rtl-1">Услуги</p>
+                <p class="rectangle-text-link" id="rtl-1">Документы</p>
             </a>
-            <a class="header-rectangle-2" href="#">
+            <a class="header-rectangle-2" href="#service">
                 <span class="header-ground-rectangle-2"></span>
                 <p class="rectangle-text-link" id="rtl-2">Сервис</p>
             </a>
@@ -94,6 +96,8 @@
         <div class="cover-rectangle">
             <section class="services-description">
                 <h2>Нефтепромысловая химия</h2>
+                <p>Наша продукция производится с использованием передовых технологий и строгих стандартов качества,
+                    что гарантирует её надежность и высокую производительность в самых сложных условиях эксплуатации.</p>
                 <p>На текущий момент в разработке:</p>
                 <ul>
                     <li>Поглотитель кислорода ПК 107</li>
@@ -103,11 +107,11 @@
 
             </section>
             <section class="cover-rectangle-right-bottom">
-                <img src="/img/chemFormula1.png" class="chem-f-1" alt="surface solution chemical formula">
+                <img src="img/chemFormula1.png" class="chem-f-1" alt="surface solution chemical formula">
             </section>
 
-            <img src="/img/ravnovesie-desulfid-sulfid.jpg" class="chem-f-2" alt="Surface solution formula">
-            <img src="/img/factory.svg" id="header-img" width="909" height="654">
+            <img src="img/ravnovesie-desulfid-sulfid.jpg" class="chem-f-2" alt="Surface solution formula">
+            <img src="img/factory.svg" id="header-img" width="909" height="654">
         </div>
 
         <div class="main-header">
@@ -118,24 +122,24 @@
                 </div>
                 <div class="main-article">
                     <p id="ma-top">
-                        Стандарты безопасности и качества мирового класса,
-                        активная политика по развитию кадрового потенциала и импортозамещения.
+                        Мы предлагаем комплексные решения, которые включают подбор, производство и поставку высококачественных химических продуктов,
+                        соответствующих мировым стандартам безопасности и качества.
                     </p>
 
                     <p id="ma-bottom">
-                        Оставаться надёжным партнёром компаний-операторов и
-                        поддерживать высокий уровень оказываемых услуг.
+                        Наша миссия — предоставление услуг на высоком уровне и укрепление позиций на рынке
+                        за счет внедрения передовых технологий и инновационных подходов.
                     </p>
                 </div>
                 <div class="main-description-buttons">
-                    <button class="md-button-left" type="button" value="#">Наш сервис</button>
-                    <button class="md-button-right" type="button" value="#">Наши услуги</button>
+                    <a class="md-button-left" type="button" href="#products">Нефтепромысловая химия</a>
+                    <a class="md-button-right" type="button" href="#aditional-solutions">Дополнительные решения</a>
                 </div>
             </div>
         </div>
         <div id="services-rectangle-group">
+            <a name="products"></a>
             <section class="services-rectangle-group">
-
                 <section class="twist-rectangle">
                     <div class="services-rectangle">
                         <a class="rectangle-link" href="javascript:void(0)">
@@ -147,7 +151,7 @@
                             </p>
                         </a>
                     </div>
-                    <div class="services-rectangle" id="tr-right">
+                    <div class="services-rectangle tr-right">
                         <a class="rectangle-link" href="javascript:void(0)">
                             <p>ИСО 103 <br>Ингибитор солеотложений</p>
                             <div class="cross-stitch"></div>
@@ -179,7 +183,7 @@
                             </p>
                         </a>
                     </div>
-                    <div class="services-rectangle" id="tr-left">
+                    <div class="services-rectangle tr-left">
                         <a class="rectangle-link" href="javascript:void(0)">
                             <p>ПТП 104 <br>Противотурбулентная <br>присадка</p>
                             <div class="cross-stitch"></div>
@@ -190,36 +194,44 @@
                         </a>
                     </div>
                 </section>
-                <div class="services-rectangle">
-                    <a class="rectangle-link" href="javascript:void(0)">
-                        <p>ДРП 101 <br>Депрессорная присадка</p>
-                        <div class="cross-stitch"></div>
-                        <p class="rectangle-description">
-                            Применяется при транспортировке нефти, нефтепродуктов и газового
-                            конденсата для снижения вязкости перекачиваемой среды.
-                        </p>
-                    </a>
-                </div>
-                <div class="services-rectangle">
-                    <a class="rectangle-link" href="javascript:void(0)">
-                        <p>Деэмульгатор <br>ДЭМ 105</p>
-                        <div class="cross-stitch"></div>
-                        <p class="rectangle-description">
-                            Применяется при подготовке нефти для разделения эмульсии на составляющие.
-                        </p>
-                    </a>
-                </div>
+                <section class="twist-rectangle">
+                    <div class="services-rectangle">
+                        <a class="rectangle-link" href="javascript:void(0)">
+                            <p>ДРП 101 <br>Депрессорная присадка</p>
+                            <div class="cross-stitch"></div>
+                            <p class="rectangle-description">
+                                Применяется при транспортировке нефти, нефтепродуктов и газового
+                                конденсата для снижения вязкости перекачиваемой среды.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="services-rectangle tr-centre">
+                        <a class="rectangle-link" href="javascript:void(0)">
+                            <p>Деэмульгатор <br>ДЭМ 105</p>
+                            <div class="cross-stitch"></div>
+                            <p class="rectangle-description">
+                                Применяется при подготовке нефти для разделения эмульсии на составляющие.
+                            </p>
+                        </a>
+                    </div>
+                </section>
             </section>
             <div class="main-services"></div>
         </div>
     </div>
 
     <div class="main-bottom">
+        <a name="reagents"></a>
         <div class="reagent-card-wrapper">
             <h2>Химические реагенты и материалы</h2>
+            <div class="main-advantages-subheading">
+                <p class="subheading">
+                    обеспечивают надежность и эффективность на всех этапах нефтегазового производства.
+                </p>
+            </div>
             <div class="reagent-card-content">
                 <div class="reagent-card">
-                    <img src="/img/transitoil-icon.png" alt="Блок Добычи">
+                    <img src="img/transitoil-icon.png" alt="Блок Добычи">
                     <h3>Блок Транспортировки</h3>
                     <ul>
                         <li>Ингибитор коррозии</li>
@@ -229,7 +241,7 @@
                     </ul>
                 </div>
                 <div class="reagent-card">
-                    <img src="/img/drilling-icon.png" alt="">
+                    <img src="img/drilling-icon.png" alt="">
                     <h3>Блок Бурения</h3>
                     <ul>
                         <li>Гидрофобизатор</li>
@@ -239,7 +251,7 @@
                     </ul>
                 </div>
                 <div class="reagent-card">
-                    <img src="/img/prepare-drilling-icon.png" alt="">
+                    <img src="img/prepare-drilling-icon.png" alt="">
                     <h3>Блок Подготовки</h3>
                     <ul>
                         <li>Деэмульгатор</li>
@@ -249,7 +261,7 @@
                     </ul>
                 </div>
                 <div class="reagent-card">
-                    <img src="/img/production-oil-icon.png" alt="Блок Добычи">
+                    <img src="img/production-oil-icon.png" alt="Блок Добычи">
                     <h3>Блок Добычи</h3>
                     <ul>
                         <li>Ингибитор коррозии</li>
@@ -261,17 +273,18 @@
             </div>
         </div>
         <div class="main-advantages">
+            <a name="service"></a>
             <div class="main-advantages-heading">
                 <h2>Предлагаемые решения</h2>
             </div>
             <div class="main-advantages-subheading">
                 <p class="subheading">
-                    Наш сервис это сервис, инжиниринг это супер,
-                    лучшие спецы и придерживаемся стандартам качества
+                    ООО «НефтеГазХим» охватывают весь цикл работы с химическими реагентами.
+                    Мы обеспечиваем индивидуальный подход и испытание продукции с учетом конкретных задач и условий эксплуатации.
                 </p>
             </div>
             <section class="main-advantages-cards">
-                <div class="ma-vcard visibility-hidden" id="mac-1">
+                <div class="ma-vcard visibility-none" id="mac-1">
                     <div class="mac-content">
                         <p class="card-number">00</p>
                         <span class="card-plus">
@@ -362,22 +375,24 @@
                             </svg>
                         </span>
                         <p class="card-description-header">Дополнительные решения</p>
-                        <span class="card-description">Логистические цепочки по всей территории РФ, в любой таре
-                            (цистерны, мешки, бочки, еврокубы)</span>
+                        <span class="card-description">Предоставление современного оборудования, которое позволяет эффективно
+                            использовать нефтехимию на всех этапах добычи и переработки углеводородов.</span>
                     </div>
                 </div>
             </section>
+            <a name="aditional-solutions"></a>
         </div>
         <div class="main-experience">
             <div class="main-experience-heading">
                 <span class="me-heading">
                     <h2>Дополнительные решения</h2>
                 </span>
-                <p class="subheading">Стандарты безопасности и качества мирового класса, активная политика по развитию
-                    кадрового потенциала и импортозамещения, богатый опыт работ во всех нефтегазовых провинциях России.
+                <p class="subheading">Мы предлагаем комплексный подход, включающий разработку специализированных систем дозирования, хранения и транспортировки реагентов,
+                    а также индивидуальные решения для повышения эффективности и безопасности производственных процессов, помогающий нашим клиентам поддерживать
+                    высокий уровень производительности и стабильности в их операционной деятельности.
                 </p>
-                <p class="subheading"> Богатый опыт работ во всех нефтегазовых провинциях России позволяют «НГХ»
-                    оставаться надёжным партнёром компаний-операторов и поддерживать высокий уровень оказываемых услуг.
+                <p class="subheading"> Наши дополнительные решения ориентированы на оптимизацию технологических процессов и снижение затрат,
+                    что делает нас надежным партнером для компаний, стремящихся к максимальной эффективности и устойчивому развитию на рынке.
                 </p>
             </div>
             <div class="me-competitions">
@@ -386,89 +401,76 @@
                     <div id="slider">
                         <div class="slide">
                             <span class="slide-img">
-                                <img src="img/amargo-chica-1%201.jpg" alt="Image 1">
+                                <img src="img/KSP-201.png" alt="Контейнеры скважинные погружные">
                             </span>
                             <span class="slide-description">
                                 <h3 class="sl-heading">
-                                    Стандарты безопасности и качества мирового класса,
-                                    активная политика по развитию
+                                    Контейнеры скважинные погружные КСП 201
                                 </h3>
                                 <p class="sl-description">
-                                    Стандарты безопасности и качества мирового класса, активная политика по развитию
-                                    кадрового потенциала и импортозамещения, богатый опыт работ во всех нефтегазовых
-                                    провинциях России позволяют НГХ» оставаться надёжным партнёром компаний-операторов и
-                                    поддерживать высокий уровень оказываемых услуг.
+                                    Контейнер устанавливается под глубинно-насосным оборудованием во время его монтажа на скважине.
+                                    Ингибитор находящийся в твердой форме растворяется в контейнере при контакте со скважинной водой или нефтью и выносится на поверхность,
+                                    защищая стенки погружного оборудования от солеотложений, коррозии, АСПО и т.д.
                                 </p>
                             </span>
                         </div>
                         <div class="slide">
                             <span class="slide-img">
-                                <img src="img/буровая-вышка-37621004.jpg" alt="Image 2">
+                                <img src="img/UDR-210.png" alt="Установка дозирования реагента">
                             </span>
                             <span class="slide-description">
                                 <h3 class="sl-heading">
-                                    Стандарты безопасности и качества мирового класса,
-                                    активная политика по развитию
+                                    Установка дозирования реагента УДР 210
                                 </h3>
                                 <p class="sl-description">
-                                    Стандарты безопасности и качества мирового класса, активная политика по развитию
-                                    кадрового потенциала и импортозамещения, богатый опыт работ во всех нефтегазовых
-                                    провинциях России позволяют НГХ» оставаться надёжным партнёром компаний-операторов и
-                                    поддерживать высокий уровень оказываемых услуг.
+                                    Установки дозирования реагента «УДР 210» предназначены для объемного напорного дозирования
+                                    жидких химических реагентов и ввода их в трубопровод системы подготовки и транспорта нефти,
+                                    дизельного топлива, газового конденсата, других жидких углеводородов и т.д..
                                 </p>
                             </span>
                         </div>
-                        <div class="slide">
-                            <span class="slide-img">
-                                <img src="img/нефтяная-скважина-ночи-19376774.jpg" alt="Image 3">
-                            </span>
-                            <span class="slide-description">
-                                <h3 class="sl-heading">
-                                    Стандарты безопасности и качества мирового класса,
-                                    активная политика по развитию
-                                </h3>
-                                <p class="sl-description">
-                                    Стандарты безопасности и качества мирового класса, активная политика по развитию
-                                    кадрового потенциала и импортозамещения, богатый опыт работ во всех нефтегазовых
-                                    провинциях России позволяют НГХ» оставаться надёжным партнёром компаний-операторов и
-                                    поддерживать высокий уровень оказываемых услуг.
-                                </p>
-                            </span>
-                        </div>
-                        <div class="slide">
-                            <span class="slide-img">
-                                <img src="img/сверлить-внутри-аляску-25877404.jpg" alt="Image 3">
-                            </span>
-                            <span class="slide-description">
-                                <h3 class="sl-heading">
-                                    Стандарты безопасности и качества мирового класса,
-                                    активная политика по развитию
-                                </h3>
-                                <p class="sl-description">
-                                    Стандарты безопасности и качества мирового класса, активная политика по развитию
-                                    кадрового потенциала и импортозамещения, богатый опыт работ во всех нефтегазовых
-                                    провинциях России позволяют НГХ» оставаться надёжным партнёром компаний-операторов и
-                                    поддерживать высокий уровень оказываемых услуг.
-                                </p>
-                            </span>
-                        </div>
-                        <div class="slide">
-                            <span class="slide-img">
-                                <img src="img/WinterDrillingII%201.jpg" alt="Image 3">
-                            </span>
-                            <span class="slide-description">
-                                <h3 class="sl-heading">
-                                    Стандарты безопасности и качества мирового класса,
-                                    активная политика по развитию
-                                </h3>
-                                <p class="sl-description">
-                                    Стандарты безопасности и качества мирового класса, активная политика по развитию
-                                    кадрового потенциала и импортозамещения, богатый опыт работ во всех нефтегазовых
-                                    провинциях России позволяют НГХ» оставаться надёжным партнёром компаний-операторов и
-                                    поддерживать высокий уровень оказываемых услуг.
-                                </p>
-                            </span>
-                        </div>
+<!--                        <div class="slide">-->
+<!--                            <span class="slide-img">-->
+<!--                                <img src="img/нефтяная-скважина-ночи-19376774.jpg" alt="Image 3">-->
+<!--                            </span>-->
+<!--                            <span class="slide-description">-->
+<!--                                <h3 class="sl-heading">-->
+<!--                                    Стандарты безопасности и качества мирового класса,-->
+<!--                                    активная политика по развитию-->
+<!--                                </h3>-->
+<!--                                <p class="sl-description">-->
+<!--                                    Стандарты безопасности и качества мирового класса-->
+<!--                                </p>-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <span class="slide-img">-->
+<!--                                <img src="img/сверлить-внутри-аляску-25877404.jpg" alt="Image 3">-->
+<!--                            </span>-->
+<!--                            <span class="slide-description">-->
+<!--                                <h3 class="sl-heading">-->
+<!--                                    Стандарты безопасности и качества мирового класса,-->
+<!--                                    активная политика по развитию-->
+<!--                                </h3>-->
+<!--                                <p class="sl-description">-->
+<!--                                    Стандарты безопасности и качества мирового класса.-->
+<!--                                </p>-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                        <div class="slide">-->
+<!--                            <span class="slide-img">-->
+<!--                                <img src="img/WinterDrillingII%201.jpg" alt="Image 3">-->
+<!--                            </span>-->
+<!--                            <span class="slide-description">-->
+<!--                                <h3 class="sl-heading">-->
+<!--                                    Стандарты безопасности и качества мирового класса,-->
+<!--                                    активная политика по развитию-->
+<!--                                </h3>-->
+<!--                                <p class="sl-description">-->
+<!--                                    Стандарты безопасности и качества мирового класса.-->
+<!--                                </p>-->
+<!--                            </span>-->
+<!--                        </div>-->
                     </div>
 
 
@@ -477,12 +479,13 @@
                             <section class="pgn-content">
                                 <p class="pgn-number">01</p>
                                 <span class="pgn-plus">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 17 17"
-                                        fill="none">
-                                        <path
-                                            d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z"
-                                            fill="#2F3034" />
-                                    </svg>
+                                    <img src="img/pgn-plus.svg">
+<!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 17 17"-->
+<!--                                        fill="none">-->
+<!--                                        <path-->
+<!--                                            d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z"-->
+<!--                                            fill="#2F3034" />-->
+<!--                                    </svg>-->
                                 </span>
                                 <p class="pgn-description">Контейнеры скважинные погружные КСП 201</p>
                             </section>
@@ -491,12 +494,7 @@
                             <section class="pgn-content">
                                 <p class="pgn-number">02</p>
                                 <span class="pgn-plus">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 17 17"
-                                        fill="none">
-                                        <path
-                                            d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z"
-                                            fill="#2F3034" />
-                                    </svg>
+                                    <img src="img/pgn-plus.svg">
                                 </span>
                                 <p class="pgn-description">Установка дозирования реагента УДР 210</p>
                             </section>
@@ -505,12 +503,7 @@
                             <section class="pgn-content">
                                 <p class="pgn-number">03</p>
                                 <span class="pgn-plus">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 17 17"
-                                        fill="none">
-                                        <path
-                                            d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z"
-                                            fill="#2F3034" />
-                                    </svg>
+                                    <img src="img/pgn-plus.svg">
                                 </span>
                                 <p class="pgn-description">Такие вот скважины и такие тоже</p>
                             </section>
@@ -519,12 +512,7 @@
                             <section class="pgn-content">
                                 <p class="pgn-number">04</p>
                                 <span class="pgn-plus">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 17 17"
-                                        fill="none">
-                                        <path
-                                            d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z"
-                                            fill="#2F3034" />
-                                    </svg>
+                                    <img src="img/pgn-plus.svg">
                                 </span>
                                 <p class="pgn-description">Такие услуги и не только такие</p>
                             </section>
@@ -533,18 +521,15 @@
                             <section class="pgn-content">
                                 <p class="pgn-number">05</p>
                                 <span class="pgn-plus">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 17 17"
-                                        fill="none">
-                                        <path
-                                            d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z"
-                                            fill="#2F3034" />
-                                    </svg>
+                                    <img src="img/pgn-plus.svg">
                                 </span>
                                 <p class="pgn-description">И оборудование есть</p>
                             </section>
                         </div> -->
+<!--                        <div class="next-prev-wrapper">-->
                         <div id="prev"><img src="img/prev.svg"></div>
                         <div id="next"><img src="img/next.svg"></div>
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
@@ -585,9 +570,9 @@
             <p>Consulting & Structural Engineering Design</p>
         </div>
     </footer>
-    <script src="/js/menu.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

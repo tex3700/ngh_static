@@ -5,6 +5,7 @@
 html {
     --polygon_gap: clamp(1.5rem, 3vw, 3rem);
     --polygon_gap-neg: calc(var(--polygon_gap) * -1);
+    --side_indent: 110px;
 }
 
 body {
@@ -47,6 +48,9 @@ h3 {
 }
 
 .visibility-hidden {
-    /* visibility: hidden; */
+     visibility: hidden;
+}
+
+.visibility-none {
     display: none;
 }

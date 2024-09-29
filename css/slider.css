@@ -33,17 +33,23 @@
 }
 
 .slide-description {
-    margin: 30vh 7vw 0 2vw;
+    margin: 12vw 7vw 0 2vw;
     height: 50%;
     flex-grow: 1;
 }
 
+/*.next-prev-wrapper {*/
+/*    position: absolute;*/
+/*}*/
+
 #prev,
 #next {
     position: absolute;
-    top: 25vh;
-    left: 34vw;
-    transform: translateY(-50%);
+    top: 120%;
+    right: 0;
+    /*left: 34vw;*/
+    /*transform: translateY(-50%);*/
+    /*transform: translate(40%, 180%);*/
     font-size: 24px;
     cursor: pointer;
 }

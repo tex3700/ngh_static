@@ -1,3 +1,18 @@
+
+.cover-rectangle-right-bottom {
+    background-image: url("../img/Rectangle 34.png");
+    background-origin: content-box;
+    background-size: cover;
+    background-position-y: center;
+    float: right;
+    margin-top: 12%;
+    width: 25vw;
+    height: 60%;
+    display: flex;
+    justify-items: auto;
+    align-items: center;
+}
+
 .chem-f-1 {
     width: 70%;
 }
@@ -10,7 +25,7 @@
 }
 
 .cover-rectangle {
-    background: url("/img/Rectangle 28 top.png");
+    background: url("../img/Rectangle 28 top.png");
     /*background-origin: content-box;*/
     background-size: cover;
     position: absolute;
@@ -58,10 +73,10 @@ li {
 .services-rectangle-group {
     transform: rotate(45deg);
     position: absolute;
-    left: 42vw;
+    left: 50vw;
     /*right: 30%;*/
     /*top: 8%;*/
-    bottom: 2vh;
+    bottom: 33vh;
     /*z-index: 0;*/
 }
 
@@ -73,6 +88,8 @@ li {
     border: 0.986px solid #D5D5D5;
     background: #FFF;
     margin: 2vw;
+    position: relative;
+    z-index: auto;
 }
 
 .services-rectangle p {
@@ -91,17 +108,23 @@ li {
 .rectangle-description {
     display: none;
 }
-
+/*.services-rectangle:hover {*/
+/*    background-color: #2F3034;*/
+/*    !*filter: drop-shadow(7px 15px 7px rgba(6, 37, 91, 0.8));*!*/
+/*    box-shadow: 7px 15px 7px rgba(6, 37, 91, 0.8);*/
+/*    width: 12vw;*/
+/*    height: 12vw;*/
+/*    transform: scale(1.1) translateY(2vh);*/
+/*    transition: all 0.3s ease;*/
+/*    !* transition: filter 0.5s, transform 0.5s; *!*/
+/*}*/
 .services-rectangle:hover {
     background-color: #2F3034;
-    filter: drop-shadow(7px 15px 7px rgba(6, 37, 91, 0.8));
-    width: 12vw;
-    height: 12vw;
-    transform: scale(1.1) translateY(2vh);
-    transition: all 0.3s ease;
-    /* transition: filter 0.5s, transform 0.5s; */
+    box-shadow: 7px 15px 7px rgba(6, 37, 91, 0.8);
+    z-index: 10;
+    transform: scale(1.1) translate(-10%, -10%);
+    transition: all 0.5s ease;
 }
-
 
 .services-rectangle:hover .rectangle-description {
     display: block;
@@ -110,7 +133,7 @@ li {
 .services-rectangle:hover p {
     font-size: 12px;
     color: #DA5D24;
-    transform: translate(1vw, -2vw);
+    transform: translate(1.3vw, -2.2vw);
 }
 
 .services-rectangle:hover .rectangle-description {
@@ -126,16 +149,22 @@ li {
     position: relative;
 }
 
-#tr-right {
+.tr-right {
     position: absolute;
     margin: 0;
     left: 100%;
 }
 
-#tr-left {
+.tr-left {
     position: absolute;
     margin: 0;
     right: 100%;
+}
+
+.tr-centre {
+    position: absolute;
+    margin: 0;
+    right: 12%;
 }
 
 .rectangle-link {
@@ -159,7 +188,7 @@ li {
 }
 
 .main-bottom {
-    background: url("/img/Rectangle 28 bottom.png");
+    background: url("../img/Rectangle 28 bottom.png");
     background-size: cover;
     width: 100%;
     height: 90%;
@@ -168,7 +197,7 @@ li {
 .reagent-card-wrapper {
     text-align: center;
     padding-top: 150px;
-    margin: 0 110px;
+    margin: 0 var(--side_indent);
 }
 
 .reagent-card-content {
@@ -236,7 +265,7 @@ li {
 }
 
 .main-advantages-subheading {
-    max-width: 24%;
+    max-width: 34%;
     margin-top: 18px;
     margin-bottom: 40px;
 }
@@ -258,9 +287,8 @@ li {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
-    background: no-repeat bottom url("/img/Group 2364.png");
-    margin-left: 110px;
-    margin-right: 110px;
+    background: no-repeat bottom url("../img/Group 2364.png");
+    margin: 0 var(--side_indent);
 }
 
 .ma-vcard {
@@ -325,32 +353,32 @@ li {
 }
 
 #mac-1:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
     background-size: cover;
 }
 
 #mac-2:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
     background-size: cover;
 }
 
 #mac-3:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
     background-size: cover;
 }
 
 #mac-4:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
     background-size: cover;
 }
 
 #mac-5:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
     background-size: cover;
 }
 
 #mac-6:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
     background-size: cover;
 }
 
@@ -361,7 +389,7 @@ li {
 .main-experience-heading {
     display: flex;
     justify-content: space-between;
-    margin: 140px 110px 70px 110px;
+    margin: 140px var(--side_indent) 70px var(--side_indent);
 }
 
 .me-heading {

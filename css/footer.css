@@ -4,11 +4,6 @@
 
 .foo-body {
     min-height: 300px;
-    /* background: url("/img/universitetsky.png"); */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
     padding: 35px 0 30px 2px;
     position: relative;
 }
@@ -20,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/img/universitetsky.png");
+    background-image: url("../img/universitetsky.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -26,7 +26,7 @@
     width: 20vw;
     height: 6vh;
     margin-top: 20px;
-    background-image: url("/img/VecNGH1_22_263 1.svg");
+    background-image: url("../img/VecNGH1_22_263 1.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -121,11 +121,11 @@
 }
 
 #ma-top {
-    max-width: 35vw;
+    max-width: 42vw;
 }
 
 #ma-bottom {
-    max-width: 25vw;
+    max-width: 35vw;
 }
 
 .main-description-buttons {
@@ -133,6 +133,10 @@
     float: left;
     position: relative;
     z-index: 990;
+}
+
+.main-description-buttons a{
+    text-decoration: none;
 }
 
 .md-button-left {
@@ -188,7 +192,7 @@
 .main-header {
     background: linear-gradient(90deg, #06255B 0%, rgba(6, 37, 91, 0.00) 40%),
         linear-gradient(180deg, #06255B 0%, rgba(6, 37, 91, 0.00) 60%),
-        center / contain no-repeat url("/img/WinterDrillingII 1.jpg"), #06255B;
+        center / contain no-repeat url("../img/WinterDrillingII 1.jpg"), #06255B;
     background-origin: content-box;
     background-size: cover;
     width: 100%;
@@ -197,7 +201,7 @@
 }
 
 .cover-rectangle-right-top {
-    background: url("/img/Group 2348.png");
+    background: url("../img/Group 2348.png");
     /*background-origin: content-box;*/
     background-size: cover;
     position: absolute;
@@ -324,18 +328,4 @@
     position: absolute;
     top: 10px;
     left: 10px;
-}
-
-.cover-rectangle-right-bottom {
-    background-image: url("/img/Rectangle 34.png");
-    background-origin: content-box;
-    background-size: cover;
-    background-position-y: center;
-    float: right;
-    margin-top: 18vh;
-    width: 25vw;
-    height: 60%;
-    display: flex;
-    justify-items: auto;
-    align-items: center;
 }
