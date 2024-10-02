@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (scrollPosition > 100) {
             header.style.background = "rgba(255,255,255,0.8)";
+            svgElement.textContent = "";
             svgElement.style.backgroundImage = 'url("/img/VecNGH1_S%201.svg")'
             langElement.style.display = "none";
             cButton.style.marginRight = "60px"
@@ -18,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         } else {
             header.style.background = "none";
-            svgElement.style.backgroundImage = 'url("/img/VecNGH1_22_263 1.svg")'
+            svgElement.style.backgroundImage = "unset";
+            svgElement.textContent = "НефтеГазХим";
+            //svgElement.style.backgroundImage = 'url("/img/VecNGH1_22_263 1.svg")'
             langElement.style.display = "block";
             cButton.style.marginRight = "10px"
             document.querySelectorAll(".main-menu a").forEach(function (item) {

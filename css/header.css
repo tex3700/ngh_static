@@ -26,7 +26,11 @@
     width: 20vw;
     height: 6vh;
     margin-top: 20px;
-    background-image: url("../img/VecNGH1_22_263 1.svg");
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 800;
+    /* background-image: url("../img/VecNGH1_22_263 1.svg"); */
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -135,7 +139,7 @@
     z-index: 990;
 }
 
-.main-description-buttons a{
+.main-description-buttons a {
     text-decoration: none;
 }
 
