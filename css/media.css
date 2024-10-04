@@ -1,0 +1,46 @@
+@media (max-width: 1700px) {
+    .services-rectangle:hover p {
+        font-size: 11px;
+        transform: translate(1.7vw, -2.2vw);
+    }
+
+    .card-description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1600px) {
+    .services-rectangle-group {
+        left: 50vw;
+        bottom: 28vh;
+    }
+
+    .services-rectangle:hover .rectangle-description {
+        font-size: 11px;
+    }
+
+    .card-description {
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    .services-rectangle-group {
+        left: 53vw;
+        bottom: 28vh;
+    }
+
+    .services-rectangle {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .rectangle-link {
+        transform: translate(0.48vw, 3.8vw) rotate(-45deg);
+    }
+
+    .services-rectangle:hover p {
+        transform: translate(1vw, -1.7vw);
+    }
+}
