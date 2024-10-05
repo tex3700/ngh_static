@@ -353,33 +353,32 @@ li {
 }
 
 #mac-1:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/drilling_engineer.jpg");
     background-size: cover;
 }
 
 #mac-2:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/labratory.webp");
     background-size: cover;
 }
 
 #mac-3:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/drilling_engineer.jpg");
     background-size: cover;
 }
 
 #mac-4:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/Enterprise_11.jpg");
     background-size: cover;
 }
 
 #mac-5:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/Delivery_service.jpg");
     background-size: cover;
 }
 
 #mac-6:hover {
-    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/zimnjaja-specodezhda-v-raznih-klimath-pojasah_specodaru_3 1.jpg");
-    background-size: cover;
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/equipment.jpg");
 }
 
 .main-experience {
