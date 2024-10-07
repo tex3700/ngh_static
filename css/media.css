@@ -26,9 +26,13 @@
 }
 
 @media (max-width: 1500px) {
+    html {
+        --side_indent: 50px;
+    }
+
     .services-rectangle-group {
-        left: 53vw;
-        bottom: 28vh;
+        left: 52vw;
+        bottom: 26vh;
     }
 
     .services-rectangle {
@@ -42,5 +46,136 @@
 
     .services-rectangle:hover p {
         transform: translate(1vw, -1.7vw);
+    }
+}
+
+@media (max-width: 1400px) {
+    html {
+        --side_indent: 20px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .main-logo-text {
+        font-size: 2rem;
+    }
+
+    .main-article p {
+        font-size: 1rem;
+    }
+
+    .services-rectangle {
+        width: 13.5vw;
+        height: 13.5vw;
+    }
+
+    .services-rectangle-group {
+        left: 50vw;
+        bottom: 20vh;
+    }
+
+    .ma-vcard {
+        min-height: 50vh;
+    }
+
+    #slider-container {
+        width: 97%;
+        height: unset;
+    }
+
+    .pagination {
+        margin-right: 0;
+    }
+
+    .slide img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-header {
+        height: 65vw;
+    }
+
+    .main-services {
+        height: 130vh;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 120vh;
+    }
+
+    .main-description {
+        margin: 25vh 0 0 10vw;
+    }
+
+    .services-rectangle-group {
+        left: 50vw;
+        bottom: 18vh;
+    }
+
+    .reagent-card {
+        padding: 15px 25px 15px 0;
+    }
+
+    .ma-vcard {
+        min-height: 48vh;
+    }
+
+    .card-description {
+        font-size: 0.8em;
+    }
+
+    .pagination {
+        max-width: 48%;
+    }
+
+    .subheading {
+        font-size: 12px;
+    }
+
+    .slide-description {
+        margin: 16vw 7vw 0 2vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* .services-rectangle {
+        width: 15vw;
+        height: 15vw;
+    } */
+
+    /* .services-rectangle-group {
+        left: 56vw;
+        bottom: 20vh;
+    } */
+
+    .services-description {
+        max-width: 40vw;
+    }
+
+    .ma-vcard {
+        min-height: 44vh;
+    }
+
+    .pagination {
+        max-width: 44%;
+    }
+}
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .main-article p {
+        font-size: 0.9rem;
+    }
+
+    .md-button-left,
+    .md-button-right {
+        padding: 10px;
     }
 }
