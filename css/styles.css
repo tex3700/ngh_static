@@ -424,6 +424,7 @@ li {
 .documents-slider {
     position: relative;
     background: no-repeat bottom url("../img/Group\ 2367.svg");
+    background-size: contain;
     width: 578px;
     height: 601px;
 }
