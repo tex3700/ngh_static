@@ -108,7 +108,7 @@
     }
 
     .main-description {
-        margin: 25vh 0 0 10vw;
+        margin: 20vw 0 0 10vw;
     }
 
     .services-rectangle-group {
@@ -227,7 +227,7 @@
     }
 
     .main-description {
-        margin: 25vh 0 0 8vw;
+        margin: 20vw 0 0 8vw;
     }
 
     .header-rectangle-1 {
@@ -286,7 +286,405 @@
     }
 
     .services-rectangle-group {
-        left: 50vw;
-        bottom: 18vh;
+        left: 47vw;
+        bottom: 13vh;
+    }
+
+    .services-rectangle:hover p {
+        font-size: 12px;
+        transform: translate(0.9vw, -1.7vw);
+        margin-bottom: 5px;
+    }
+
+    .foo-logo {
+        max-width: 10vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    .main-logo-text {
+        font-size: 1.8rem;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 98vh;
+    }
+
+    .services-rectangle {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .services-rectangle-group {
+        left: 45vw;
+        bottom: 6vh;
+    }
+
+    .tr-centre {
+        right: 0;
+        left: 100%;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .languages {
+        display: none;
+    }
+
+    .contacts-button {
+        margin-right: 30px;
+    }
+
+    .services-rectangle {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .services-rectangle-group {
+        left: 42vw;
+        bottom: 0;
+    }
+
+    .services-rectangle:hover p {
+        transform: translate(0.8vw, -1.5vw);
+    }
+
+    .main-advantages-cards {
+        display: grid;
+        background: unset;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        grid-auto-flow: dense;
+    }
+
+    .ma-vcard {
+        min-height: 44vh;
+        min-width: 300px;
+    }
+
+    #prev, #next {
+        display: none;
+    }
+
+    .pics .pic-2 {
+        transform-origin: 70% 30%;
+    }
+
+    .pics .pic-4 {
+        transform-origin: 70% 80%;
+    }
+
+    .foo-contacts {
+        max-width: 40%;
+    }
+
+    .design-name {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .cover-rectangle-right-top {
+        bottom: 98vh;
+    }
+
+    .main-services {
+        height: 100vh;
+    }
+
+    .main-description {
+        margin: 16vw 0 0 8vw;
+    }
+
+    .header-rectangle-1 {
+        top: 25vh;
+        right: 20vw;
+        width: 95px;
+        height: 95px;
+    }
+
+    .header-rectangle-1:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-ground-rectangle-1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-rectangle-2 {
+        width: 75px;
+        height: 75px;
+        top: 42vh;
+        right: 32vw;
+    }
+
+    .header-rectangle-2:hover {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-ground-rectangle-2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-rectangle-3 {
+        width: 105px;
+        height: 105px;
+        top: 56vh;
+        right: 19.5vw;
+    }
+
+    .header-rectangle-3:hover {
+        width: 110px;
+        height: 110px;
+    }
+
+    .header-ground-rectangle-3 {
+        width: 110px;
+        height: 110px;
+    }
+
+    .ma-vcard {
+        min-height: 42vh;
+        min-width: 290px;
+    }
+}
+
+@media (max-width: 940px) {
+    .cover-rectangle-right-top {
+        bottom: 95vh;
+    }
+
+    .services-description {
+        top: 38%;
+    }
+
+    .services-rectangle {
+        width: 17.5vw;
+        height: 17.5vw;
+    }
+
+    .rectangle-link {
+        transform: translate(0.48vw, 4.5vw) rotate(-45deg);
+    }
+
+    .services-rectangle-group {
+        left: 46vw;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 920px) {
+    .main-menu {
+        display: none;
+    }
+
+    .sidebarMenuWrapper {
+        display: block;
+    }
+
+    .main-header {
+        height: 80vw;
+        background-position-x: right;
+    }
+
+    .services-description {
+        top: 44%;
+    }
+
+    .main-services {
+        height: 110vh;
+    }
+
+    .ma-vcard {
+        min-height: 42vh;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 900px) {
+    .services-description {
+        top: 40%;
+    }
+
+    .services-rectangle-group {
+        left: 38vw;
+        bottom: 0;
+    }
+
+    .ma-vcard {
+        min-height: 42vh;
+        min-width: 270px;
+    }
+}
+
+@media (max-width: 880px) {
+    .cover-rectangle-right-top {
+        bottom: 98vh;
+    }
+
+    .rectangle-text-link {
+        font-size: 12px;
+    }
+
+    .header-rectangle-1 {
+        top: 25vh;
+        right: 20vw;
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-rectangle-1:hover {
+        width: 90px;
+        height: 90px;
+    }
+
+    .header-ground-rectangle-1 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .header-rectangle-2 {
+        width: 65px;
+        height: 65px;
+        top: 42vh;
+        right: 32vw;
+    }
+
+    .header-rectangle-2:hover {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-ground-rectangle-2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-rectangle-3 {
+        width: 95px;
+        height: 95px;
+        top: 56vh;
+        right: 19.5vw;
+    }
+
+    .header-rectangle-3:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-ground-rectangle-3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #rtl-1 {
+        transform: translate(1px, 36px) rotate(-45deg);
+    }
+
+    #rtl-2 {
+        transform: translate(1px, 26px) rotate(-45deg);
+    }
+
+    #rtl-3 {
+        transform: translate(5px, 40px) rotate(-45deg);
+    }
+
+    .reagent-card-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-description {
+        top: 40%;
+    }
+
+    .services-rectangle {
+        width: 19vw;
+        height: 19vw;
+    }
+
+    .services-rectangle-group {
+        left: 44vw;
+        bottom: -5vw;
+    }
+
+    .rectangle-link {
+        transform: translate(0.48vw, 5vw) rotate(-45deg);
+    }
+}
+
+@media (max-width: 860px) {
+    .main-header {
+        height: 80vw;
+        background-position-x: right;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 104vh;
+    }
+
+    .services-description {
+        max-width: 60vw;
+        left: 11%;
+    }
+
+    .services-rectangle-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        left: 21vw;
+        bottom: 18vw;
+    }
+
+    .services-rectangle {
+        width: 21vw;
+        height: 21vw;
+    }
+
+    .rectangle-link {
+        transform: translate(1vw, 7vw) rotate(-45deg);
+    }
+
+    .services-rectangle:hover p {
+        transform: translate(2.6vw, -3.5vw);
+        margin-bottom: 20px;
+    }
+
+    .tr-left {
+        right: 0;
+        left: 100%;
+    }
+
+    .tr-centre {
+        right: unset;
+        bottom: unset;
+        left: 100%;
+    }
+
+    .twist-rectangle-end {
+        position: relative;
+        left: 92%;
+        bottom: 48%;
+    }
+
+    .subgroup-second {
+        margin: 48vw 0 0 -2vw;
+    }
+
+    .main-services {
+        height: 130vh;
+    }
+
+    .services-description {
+        top: 33%;
+    }
+
+    .ma-vcard {
+        min-height: 42vh;
+        min-width: 260px;
     }
 }

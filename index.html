@@ -16,6 +16,24 @@
 <body>
 
     <nav class="main-nav">
+        <div class="sidebarMenuWrapper">
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li id="first-sidebar-item">Name <span>Position</span></li>
+                    <li><a href="#service">Сервис</a></li>
+                    <li><a href="#products">Продукция</a></li>
+                    <li><a href="#reagents">Применение</a></li>
+                    <li><a href="#documents">Документация</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
         <a href="#">
             <div class="main-logo">
                 <h1 class="main-logo-text">НефтеГазХим</h1>
@@ -146,81 +164,85 @@
         <div id="services-rectangle-group">
             <a name="products"></a>
             <section class="services-rectangle-group">
-                <section class="twist-rectangle">
+                <div class="services-rectangle-subgroup">
+                    <section class="twist-rectangle">
+                        <div class="services-rectangle">
+                            <a class="rectangle-link" href="javascript:void(0)">
+                                <p>ИКОР 106<br>Ингибитор коррозии</p>
+                                <div class="cross-stitch"></div>
+                                <p class="rectangle-description">
+                                    Применяются при добыче, транспортировке и подготовки нефти для снижения коррозионного
+                                    воздействия на нефтепромысловое оборудование.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="services-rectangle tr-right">
+                            <a class="rectangle-link" href="javascript:void(0)">
+                                <p>ИСО 103 <br>Ингибитор <br>солеотложений</p>
+                                <div class="cross-stitch"></div>
+                                <p class="rectangle-description">
+                                    Применяются при добыче, транспортировке и подготовки нефти для
+                                    предотвращения отложения солей на нефтепромысловом оборудовании.
+                                </p>
+                            </a>
+                        </div>
+                    </section>
                     <div class="services-rectangle">
                         <a class="rectangle-link" href="javascript:void(0)">
-                            <p>ИКОР 106<br>Ингибитор коррозии</p>
-                            <div class="cross-stitch"></div>
-                            <p class="rectangle-description">
-                                Применяются при добыче, транспортировке и подготовки нефти для снижения коррозионного
-                                воздействия на нефтепромысловое оборудование.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="services-rectangle tr-right">
-                        <a class="rectangle-link" href="javascript:void(0)">
-                            <p>ИСО 103 <br>Ингибитор <br>солеотложений</p>
+                            <p>Растворитель <br>АСПО РАСПО 100</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">
                                 Применяются при добыче, транспортировке и подготовки нефти для
-                                предотвращения отложения солей на нефтепромысловом оборудовании.
+                                удаления отложений АСПО на нефтепромысловом оборудовании.
                             </p>
                         </a>
                     </div>
-                </section>
-                <div class="services-rectangle">
-                    <a class="rectangle-link" href="javascript:void(0)">
-                        <p>Растворитель <br>АСПО РАСПО 100</p>
-                        <div class="cross-stitch"></div>
-                        <p class="rectangle-description">
-                            Применяются при добыче, транспортировке и подготовки нефти для
-                            удаления отложений АСПО на нефтепромысловом оборудовании.
-                        </p>
-                    </a>
                 </div>
-                <section class="twist-rectangle">
-                    <div class="services-rectangle">
-                        <a class="rectangle-link" href="javascript:void(0)">
-                            <p>Ингибитор <br>АСПО ИАСПО 102</p>
-                            <div class="cross-stitch"></div>
-                            <p class="rectangle-description">
-                                Применяются при добыче, транспортировке и подготовки нефти для
-                                предотвращения отложений АСПО на нефтепромысловом оборудовании.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="services-rectangle tr-left">
-                        <a class="rectangle-link" href="javascript:void(0)">
-                            <p>ПТП 104 <br>Противотурбулентная <br>присадка</p>
-                            <div class="cross-stitch"></div>
-                            <p class="rectangle-description">
-                                Применяется при транспортировке нефти, нефтепродуктов и газового
-                                конденсата для увеличения пропускной способности трубопроводов.
-                            </p>
-                        </a>
-                    </div>
-                </section>
-                <section class="twist-rectangle">
-                    <div class="services-rectangle">
-                        <a class="rectangle-link" href="javascript:void(0)">
-                            <p>ДРП 101 <br>Депрессорная присадка</p>
-                            <div class="cross-stitch"></div>
-                            <p class="rectangle-description">
-                                Применяется при транспортировке нефти, нефтепродуктов и газового
-                                конденсата для снижения вязкости перекачиваемой среды.
-                            </p>
-                        </a>
-                    </div>
-                    <div class="services-rectangle tr-centre">
-                        <a class="rectangle-link" href="javascript:void(0)">
-                            <p>Деэмульгатор <br>ДЭМ 105</p>
-                            <div class="cross-stitch"></div>
-                            <p class="rectangle-description">
-                                Применяется при подготовке нефти для разделения эмульсии на составляющие.
-                            </p>
-                        </a>
-                    </div>
-                </section>
+                <div class="services-rectangle-subgroup subgroup-second">
+                    <section class="twist-rectangle">
+                        <div class="services-rectangle">
+                            <a class="rectangle-link" href="javascript:void(0)">
+                                <p>Ингибитор <br>АСПО ИАСПО 102</p>
+                                <div class="cross-stitch"></div>
+                                <p class="rectangle-description">
+                                    Применяются при добыче, транспортировке и подготовки нефти для
+                                    предотвращения отложений АСПО на нефтепромысловом оборудовании.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="services-rectangle tr-left">
+                            <a class="rectangle-link" href="javascript:void(0)">
+                                <p>ПТП 104 <br>Противотурбулентная <br>присадка</p>
+                                <div class="cross-stitch"></div>
+                                <p class="rectangle-description">
+                                    Применяется при транспортировке нефти, нефтепродуктов и газового
+                                    конденсата для увеличения пропускной способности трубопроводов.
+                                </p>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="twist-rectangle twist-rectangle-end">
+                        <div class="services-rectangle">
+                            <a class="rectangle-link" href="javascript:void(0)">
+                                <p>ДРП 101 <br>Депрессорная <br>присадка</p>
+                                <div class="cross-stitch"></div>
+                                <p class="rectangle-description">
+                                    Применяется при транспортировке нефти, нефтепродуктов и газового
+                                    конденсата для снижения вязкости перекачиваемой среды.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="services-rectangle tr-centre">
+                            <a class="rectangle-link" href="javascript:void(0)">
+                                <p>Деэмульгатор <br>ДЭМ 105</p>
+                                <div class="cross-stitch"></div>
+                                <p class="rectangle-description">
+                                    Применяется при подготовке нефти для разделения эмульсии на составляющие.
+                                </p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
             </section>
             <div class="main-services"></div>
         </div>
@@ -621,7 +643,7 @@
         <div class="foo-copyright">
             <p>Imprint l 2023</p>
             <p>Copyright : НефтеГазХим, все права защищены</p>
-            <p>Consulting & Structural Engineering Design</p>
+            <p class="design-name">Consulting & Structural Engineering Design</p>
         </div>
     </footer>
     <script src="js/menu.js"></script>

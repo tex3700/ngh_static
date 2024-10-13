@@ -8,6 +8,7 @@ html {
 
 body {
     background: #F7F9FC;
+    overflow-x: hidden;
 }
 
 footer {
