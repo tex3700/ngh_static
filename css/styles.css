@@ -293,7 +293,7 @@ li {
 
 .ma-vcard {
     /* width: 16vw; */
-    min-height: 430px;
+    height: 480px;
     border: 1px solid #E2E2E2;
     background: none;
     flex: 1;

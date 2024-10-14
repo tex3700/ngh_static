@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             logoElement.style.marginTop = "20px";
             logoElement.style.backgroundImage = 'url(../img/VecNGH1_S_1.svg)';
             //langElement.style.display = "none";
-            cButton.style.marginRight = "60px"
+            cButton.style.marginRight = "30px"
             document.querySelectorAll(".main-menu a").forEach(function (item) {
                 item.style.color = "#2F3034";
             });
