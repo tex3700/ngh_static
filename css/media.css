@@ -12,7 +12,7 @@
 @media (max-width: 1600px) {
     .services-rectangle-group {
         left: 50vw;
-        bottom: 28vh;
+        bottom: 260px;
     }
 
     .services-rectangle:hover .rectangle-description {
@@ -32,7 +32,7 @@
 
     .services-rectangle-group {
         left: 52vw;
-        bottom: 26vh;
+        bottom: 241px;
     }
 
     .services-rectangle {
@@ -73,11 +73,11 @@
 
     .services-rectangle-group {
         left: 50vw;
-        bottom: 20vh;
+        bottom: 185px;
     }
 
     .ma-vcard {
-        min-height: 50vh;
+        min-height: 464px;
     }
 
     #slider-container {
@@ -96,15 +96,15 @@
 
 @media (max-width: 1300px) {
     .main-header {
-        height: 65vw;
+        height: 734px;
     }
 
     .main-services {
-        height: 130vh;
+        height: 1205px;
     }
 
     .cover-rectangle-right-top {
-        bottom: 120vh;
+        bottom: 1112px;
     }
 
     .main-description {
@@ -113,7 +113,7 @@
 
     .services-rectangle-group {
         left: 50vw;
-        bottom: 18vh;
+        bottom: 167px;
     }
 
     .reagent-card {
@@ -121,7 +121,7 @@
     }
 
     .ma-vcard {
-        min-height: 48vh;
+        min-height: 445px;
     }
 
     .card-description {
@@ -149,7 +149,7 @@
 
     .services-rectangle-group {
         left: 46vw;
-        bottom: 14vh;
+        bottom: 130px;
     }
 
     .rectangle-link {
@@ -161,7 +161,7 @@
     }
 
     .ma-vcard {
-        min-height: 44vh;
+        min-height: 408px;
     }
 
     .pagination {
@@ -196,7 +196,7 @@
 
     .services-rectangle-group {
         left: 46vw;
-        bottom: 15vh;
+        bottom: 139px;
     }
 
     .main-advantages-cards {
@@ -219,11 +219,11 @@
     }
 
     .main-services {
-        height: 110vh;
+        height: 1020px;
     }
 
     .cover-rectangle-right-top {
-        bottom: 103vh;
+        bottom: 955px;
     }
 
     .main-description {
@@ -231,7 +231,7 @@
     }
 
     .header-rectangle-1 {
-        top: 25vh;
+        top: 232px;
         right: 20vw;
         width: 100px;
         height: 100px;
@@ -250,7 +250,7 @@
     .header-rectangle-2 {
         width: 80px;
         height: 80px;
-        top: 42vh;
+        top: 389px;
         right: 32vw;
     }
 
@@ -267,7 +267,7 @@
     .header-rectangle-3 {
         width: 110px;
         height: 110px;
-        top: 56vh;
+        top: 519px;
         right: 19.5vw;
     }
 
@@ -287,7 +287,7 @@
 
     .services-rectangle-group {
         left: 47vw;
-        bottom: 13vh;
+        bottom: 121px;
     }
 
     .services-rectangle:hover p {
@@ -307,7 +307,7 @@
     }
 
     .cover-rectangle-right-top {
-        bottom: 98vh;
+        bottom: 919px;
     }
 
     .services-rectangle {
@@ -317,13 +317,18 @@
 
     .services-rectangle-group {
         left: 45vw;
-        bottom: 6vh;
+        bottom: 56px;
     }
 
     .tr-centre {
         right: 0;
         left: 100%;
         bottom: 0;
+    }
+
+    #prev,
+    #next {
+        top: 100%;
     }
 }
 
@@ -337,8 +342,8 @@
     }
 
     .services-rectangle {
-        width: 16vw;
-        height: 16vw;
+        width: 17vw;
+        height: 17vw;
     }
 
     .services-rectangle-group {
@@ -359,11 +364,12 @@
     }
 
     .ma-vcard {
-        min-height: 44vh;
+        min-height: 408px;
         min-width: 300px;
     }
 
-    #prev, #next {
+    #prev,
+    #next {
         display: none;
     }
 
@@ -386,19 +392,19 @@
 
 @media (max-width: 960px) {
     .cover-rectangle-right-top {
-        bottom: 98vh;
+        bottom: 870px;
     }
 
     .main-services {
-        height: 100vh;
+        height: 977px;
     }
 
     .main-description {
-        margin: 16vw 0 0 8vw;
+        margin: 24vw 0 0 8vw;
     }
 
     .header-rectangle-1 {
-        top: 25vh;
+        top: 232px;
         right: 20vw;
         width: 95px;
         height: 95px;
@@ -417,7 +423,7 @@
     .header-rectangle-2 {
         width: 75px;
         height: 75px;
-        top: 42vh;
+        top: 389px;
         right: 32vw;
     }
 
@@ -434,7 +440,7 @@
     .header-rectangle-3 {
         width: 105px;
         height: 105px;
-        top: 56vh;
+        top: 519px;
         right: 19.5vw;
     }
 
@@ -449,14 +455,14 @@
     }
 
     .ma-vcard {
-        min-height: 42vh;
+        min-height: 389px;
         min-width: 290px;
     }
 }
 
 @media (max-width: 940px) {
     .cover-rectangle-right-top {
-        bottom: 95vh;
+        bottom: 881px;
     }
 
     .services-description {
@@ -488,7 +494,7 @@
     }
 
     .main-header {
-        height: 80vw;
+        height: 735px;
         background-position-x: right;
     }
 
@@ -497,11 +503,11 @@
     }
 
     .main-services {
-        height: 110vh;
+        height: 1020px;
     }
 
     .ma-vcard {
-        min-height: 42vh;
+        min-height: 389px;
         min-width: 280px;
     }
 }
@@ -517,14 +523,14 @@
     }
 
     .ma-vcard {
-        min-height: 42vh;
+        min-height: 389px;
         min-width: 270px;
     }
 }
 
 @media (max-width: 880px) {
     .cover-rectangle-right-top {
-        bottom: 98vh;
+        bottom: 909px;
     }
 
     .rectangle-text-link {
@@ -532,7 +538,7 @@
     }
 
     .header-rectangle-1 {
-        top: 25vh;
+        top: 232px;
         right: 20vw;
         width: 85px;
         height: 85px;
@@ -551,7 +557,7 @@
     .header-rectangle-2 {
         width: 65px;
         height: 65px;
-        top: 42vh;
+        top: 389px;
         right: 32vw;
     }
 
@@ -568,7 +574,7 @@
     .header-rectangle-3 {
         width: 95px;
         height: 95px;
-        top: 56vh;
+        top: 519px;
         right: 19.5vw;
     }
 
@@ -620,12 +626,12 @@
 
 @media (max-width: 860px) {
     .main-header {
-        height: 80vw;
+        height: 685px;
         background-position-x: right;
     }
 
     .cover-rectangle-right-top {
-        bottom: 104vh;
+        bottom: 964px;
     }
 
     .services-description {
@@ -676,7 +682,7 @@
     }
 
     .main-services {
-        height: 130vh;
+        height: 1205px;
     }
 
     .services-description {
@@ -684,7 +690,7 @@
     }
 
     .ma-vcard {
-        min-height: 42vh;
+        min-height: 389px;
         min-width: 260px;
     }
 }

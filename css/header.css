@@ -28,7 +28,7 @@
 
 .main-logo {
     width: 20vw;
-    height: 6vh;
+    height: 55px;
     /*margin-top: 20px;*/
     /* background-image: url("../img/VecNGH1_22_263 1.svg"); */
     background-size: contain;
@@ -224,7 +224,7 @@
     background-origin: content-box;
     background-size: cover;
     width: 100%;
-    height: 110vh;
+    height: 1018px;
 
 }
 
@@ -234,7 +234,7 @@
     background-size: cover;
     position: absolute;
     right: 0;
-    bottom: 140vh;
+    bottom: 1298px;
     z-index: 2;
     width: 17%;
     height: 50%;
@@ -243,7 +243,7 @@
 
 .header-rectangle-1 {
     position: absolute;
-    top: 35vh;
+    top: 325px;
     right: 20vw;
     width: 110px;
     height: 110px;
@@ -269,7 +269,7 @@
     opacity: 0.9;
     background: rgba(6, 37, 91, 0.80);
     position: absolute;
-    top: 55vh;
+    top: 510px;
     right: 30vw;
     color: #FFFFFF;
 }
@@ -288,7 +288,7 @@
     opacity: 0.9;
     background: rgba(6, 37, 91, 0.80);
     position: absolute;
-    top: 70vh;
+    top: 650px;
     right: 19.3vw;
     color: #FFFFFF;
 }
@@ -357,6 +357,7 @@
     top: 10px;
     left: 10px;
 }
+
 /*Mobile sidebar menu*/
 .sidebarMenuWrapper {
     display: none;
@@ -371,11 +372,12 @@
     height: 100%;
     position: fixed;
     left: 0;
+    top: 33px;
     width: 300px;
     margin-top: 24px;
     transform: translateX(-300px);
     transition: transform 250ms ease-in-out;
-    background-image: linear-gradient(180deg,#FF7C40  0%, #06255B 100%);
+    background-image: linear-gradient(180deg, #FF7C40 0%, #06255B 100%);
 }
 
 #sidebarMenu a:hover {
@@ -383,12 +385,13 @@
     color: #dddddd;
 }
 
-.sidebarMenuInner{
-    margin:0;
-    padding:0;
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
-.sidebarMenuInner li{
+
+.sidebarMenuInner li {
     list-style: none;
     color: #fff;
     text-transform: uppercase;
@@ -397,19 +400,22 @@
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
-.sidebarMenuInner li span{
+
+.sidebarMenuInner li span {
     display: block;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.50);
 }
-.sidebarMenuInner li a{
+
+.sidebarMenuInner li a {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
 }
-input[type="checkbox"]:checked ~ #sidebarMenu {
+
+input[type="checkbox"]:checked~#sidebarMenu {
     transform: translateX(0);
 }
 
@@ -418,6 +424,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     display: none;
 }
+
 .sidebarIconToggle {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -428,9 +435,10 @@ input[type=checkbox] {
     /*width: 100%;*/
     top: 0;
     left: -10vw;
-    height:32px;
+    height: 32px;
     width: 32px;
 }
+
 .spinner {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -439,6 +447,7 @@ input[type=checkbox] {
     width: 100%;
     background-color: #fff;
 }
+
 .horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -446,12 +455,14 @@ input[type=checkbox] {
     float: left;
     margin-top: 4px;
 }
+
 .diagonal.part-1 {
     position: relative;
     transition: all 0.3s;
     box-sizing: border-box;
     float: left;
 }
+
 .diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -459,18 +470,21 @@ input[type=checkbox] {
     float: left;
     margin-top: 4px;
 }
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
     opacity: 0;
 }
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(135deg);
     margin-top: 8px;
 }
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(-135deg);

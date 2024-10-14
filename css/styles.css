@@ -36,7 +36,7 @@
 .main-services {
     background: #06255B;
     width: 100%;
-    height: 150vh;
+    height: 1391px;
     position: relative;
     z-index: -1;
 }
@@ -75,7 +75,7 @@ li {
     left: 49vw;
     /*right: 30%;*/
     /*top: 8%;*/
-    bottom: 28vh;
+    bottom: 260px;
     /*z-index: 0;*/
 }
 
@@ -293,7 +293,7 @@ li {
 
 .ma-vcard {
     /* width: 16vw; */
-    min-height: 54vh;
+    min-height: 430px;
     border: 1px solid #E2E2E2;
     background: none;
     flex: 1;

@@ -4,7 +4,7 @@
 #slider-container {
     position: relative;
     width: 90vw;
-    height: 70vh;
+    height: 649px;
     margin: 0 var(--side_indent) 0 var(--side_indent);
     overflow: hidden;
 }
