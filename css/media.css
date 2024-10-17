@@ -1181,12 +1181,16 @@
         min-width: 320px;
     }
 
-    .ma-vcard:hover{
+    .ma-vcard:hover {
         height: 320px;
         max-width: 220px;
     }
 
-    #mac-2:hover, #mac-3:hover, #mac-4:hover, #mac-5:hover, #mac-6:hover {
+    #mac-2:hover,
+    #mac-3:hover,
+    #mac-4:hover,
+    #mac-5:hover,
+    #mac-6:hover {
         background-position-y: bottom;
     }
 
@@ -1214,6 +1218,11 @@
 
     .subgroup-second {
         margin: 346px 0 0 -2vw;
+    }
+
+    .services-rectangle:hover p {
+        transform: translate(4vw, -5vw);
+        margin-bottom: 15px;
     }
 
     .documents-slider {
@@ -1245,5 +1254,67 @@
 
     .foo-copyright p {
         font-size: 11px;
+    }
+}
+
+@media (max-width: 440px) {
+    .spinner {
+        height: 3px;
+        width: 90%;
+    }
+
+    .main-description-buttons {
+        display: grid;
+    }
+
+    .contacts-button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .md-button-left,
+    .md-button-right {
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+    .services-rectangle {
+        width: 37vw;
+        height: 37vw;
+    }
+
+    .subgroup-second {
+        margin: 340px 0 0 -2vw;
+    }
+
+    .services-rectangle-group {
+        left: -30px;
+        bottom: 104px;
+    }
+
+    .reagent-card-wrapper {
+        padding-top: 200px;
+    }
+
+    .pagination-item {
+        width: 42%;
+        font-size: 12px;
+    }
+
+    .pics .pic-2 {
+        transform-origin: 80% 30%;
+    }
+
+    .pics .pic-4 {
+        transform-origin: 80% 80%;
+    }
+
+    .slide {
+        margin: 80px 0 0 0;
+    }
+
+    .foo-contacts {
+        max-width: 65%;
+        margin-left: 10px;
     }
 }

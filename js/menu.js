@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     //let langElement = document.querySelector('.languages');
     let cButton = document.querySelector('.contacts-button');
     let spinner = document.querySelectorAll('.spinner');
+    const sidebarMenuInner = document.querySelector('.sidebarMenuInner');
+    let sidebarMenuLinks = sidebarMenuInner.querySelectorAll('a');
 
     window.addEventListener("scroll", function () {
         let scrollPosition = window.scrollY;
@@ -40,5 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 itemSpinner.style.backgroundColor = "#FFF";
             });
         }
+    });
+
+    sidebarMenuLinks.forEach(menulink => {
+        menulink.addEventListener('click', function () {
+            const openSidebarMenu = document.getElementById('openSidebarMenu');
+            openSidebarMenu.checked = false;
+        });
     });
 });
