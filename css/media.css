@@ -374,6 +374,10 @@
         transform: translate(0.48vw, 4.5vw) rotate(-45deg);
     }
 
+    .reagent-card img {
+        max-width: 50px;
+    }
+
     .main-advantages-cards {
         display: grid;
         background: unset;
@@ -913,6 +917,15 @@
 }
 
 @media (max-width: 640px) {
+    .cover-rectangle-right-top {
+        width: 27%;
+    }
+
+    .cover-rectangle-right-bottom {
+        width: 37vw;
+        height: 53%;
+    }
+
     .header-rectangle-1 {
         display: none;
     }
@@ -989,6 +1002,7 @@
 @media (max-width: 600px) {
     .services-description {
         top: 32%;
+        left: 9%;
     }
 
     .services-rectangle {
@@ -1050,6 +1064,7 @@
     .services-description {
         max-width: 68vw;
         left: 7%;
+        top: 34%;
     }
 
     .services-rectangle {
@@ -1098,6 +1113,15 @@
 }
 
 @media (max-width: 520px) {
+    .cover-rectangle-right-bottom {
+        width: 41vw;
+        height: 53%;
+    }
+
+    .services-description {
+        top: 32%;
+    }
+
     .services-rectangle:hover p {
         transform: translate(2.4vw, -3vw);
         margin-bottom: 20px;
@@ -1154,6 +1178,8 @@
 
     .contacts-button {
         margin-right: 15px;
+        padding: 5px 10px;
+        font-size: 11px;
     }
 
     .services-rectangle:hover p {
@@ -1220,6 +1246,10 @@
         margin: 346px 0 0 -2vw;
     }
 
+    .services-description {
+        top: 34%;
+    }
+
     .services-rectangle:hover p {
         transform: translate(4vw, -5vw);
         margin-bottom: 15px;
@@ -1258,24 +1288,36 @@
 }
 
 @media (max-width: 440px) {
+    .main-logo {
+        right: 10px;
+    }
+
     .spinner {
         height: 3px;
         width: 90%;
+    }
+
+    input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
+        margin-top: -10px;
     }
 
     .main-description-buttons {
         display: grid;
     }
 
-    .contacts-button {
-        padding: 5px 10px;
-        font-size: 11px;
-    }
-
     .md-button-left,
     .md-button-right {
         font-size: 11px;
         margin-right: 0;
+        padding: 6px;
+    }
+
+    .services-description {
+        top: 32.5%;
+    }
+
+    .services-description h2 {
+        font-size: 1.5rem;
     }
 
     .services-rectangle {
@@ -1313,8 +1355,183 @@
         margin: 80px 0 0 0;
     }
 
+    .documents-slider {
+        width: 360px;
+        height: 460px;
+    }
+
+    .frame {
+        width: 270px;
+        height: 330px;
+        margin-top: -34%;
+        margin-left: -35%;
+    }
+
+    .pics .pic {
+        width: 123px;
+        height: 161px;
+    }
+
     .foo-contacts {
         max-width: 65%;
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .services-rectangle {
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .subgroup-second {
+        margin: 338px 0 0 -2vw;
+    }
+}
+
+@media (max-width: 410px) {
+    .services-rectangle {
+        width: 39vw;
+        height: 39vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .cover-rectangle-right-bottom {
+        width: 47vw;
+        height: 53%;
+    }
+
+    .services-rectangle-group {
+        left: -42px;
+        bottom: 104px;
+    }
+
+    .services-rectangle {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .documents-slider {
+        width: 330px;
+        height: 360px;
+    }
+
+    .frame {
+        width: 250px;
+        height: 310px;
+        margin-top: -44%;
+        margin-left: -36%;
+    }
+
+    .pics .pic {
+        width: 113px;
+        height: 151px;
+    }
+}
+
+@media (max-width: 390px) {
+    .services-rectangle {
+        width: 41vw;
+        height: 41vw;
+    }
+
+    .main-advantages-subheading {
+        max-width: 84%;
+    }
+}
+
+@media (max-width: 380px) {
+    .services-rectangle {
+        width: 42vw;
+        height: 42vw;
+    }
+
+    .services-rectangle-group {
+        left: -50px;
+        bottom: 104px;
+    }
+
+    .services-rectangle:hover p {
+        font-size: 9px;
+        transform: translate(2vw, -5vw);
+    }
+
+    .services-rectangle:hover .rectangle-description {
+        font-size: 10px;
+    }
+
+    .rectangle-link {
+        transform: translate(0.3vw, 10vw) rotate(-45deg);
+    }
+
+    .subgroup-second {
+        margin: 333px 0 0 -2vw;
+    }
+
+    .documents-slider {
+        width: 320px;
+        height: 350px;
+    }
+
+    .frame {
+        width: 230px;
+        height: 300px;
+        margin-top: -44%;
+        margin-left: -34%;
+    }
+
+    .pics .pic {
+        width: 105px;
+        height: 144px;
+    }
+
+    .foo-copyright {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+    .subgroup-second {
+        margin: 324px 0 0 -2vw;
+    }
+
+    .services-rectangle:hover p {
+        transform: translate(3vw, -5vw);
+    }
+
+    .pagination-item {
+        font-size: 11px;
+    }
+
+    .documents-slider {
+        width: 300px;
+        height: 330px;
+    }
+
+    .frame {
+        width: 220px;
+        height: 280px;
+        margin-top: -44%;
+        margin-left: -36%;
+    }
+
+    .pics .pic {
+        width: 100px;
+        height: 134px;
+    }
+
+    .foo-copyright p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .subgroup-second {
+        margin: 315px 0 0 -2vw;
+    }
+
+    .foo-copyright {
+        padding: 10px;
     }
 }
