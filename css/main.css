@@ -8,6 +8,10 @@ html {
 
 body {
     background: #F7F9FC;
+}
+
+html,
+body {
     overflow-x: hidden;
 }
 

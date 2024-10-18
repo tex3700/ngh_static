@@ -79,6 +79,10 @@ li {
     /*z-index: 0;*/
 }
 
+.services-rectangle-subgroup {
+    position: relative;
+}
+
 .services-rectangle {
     width: 12vw;
     height: 12vw;
@@ -567,4 +571,57 @@ li {
     100% {
         z-index: 1;
     }
+}
+
+/*try rectangle*/
+
+.s-r-g {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* width: 90%; */
+    margin: 0 auto;
+    aspect-ratio: 8 / 8;
+    position: absolute;
+    bottom: 0;
+}
+
+.s-r {
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+    background-color: black;
+    color: black;
+    margin: 20px;
+    clip-path: polygon(0 50%, 50% 100%, 100% 50%, 50% 0);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.box-wrapper:nth-child(1) {
+    transform: translate(50%, 50%);
+}
+
+.box-wrapper:nth-child(3) {
+    transform: translate(50%, 50%);
+}
+
+.box-wrapper:nth-child(5) {
+    transform: translate(50%, 50%);
+}
+
+.box-wrapper:nth-child(7) {
+    transform: translate(50%, 50%);
+}
+
+.box-wrapper:nth-child(2) {
+    transform: unset;
+}
+
+.box-wrapper:nth-child(4) {
+    transform: unset;
+}
+
+.box-wrapper:nth-child(9) {
+    display: none;
 }
