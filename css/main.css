@@ -3,6 +3,28 @@
 }
 
 html {
+    box-sizing: border-box;
+    min-height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+    --sr_margin-px: 10px;
+    --sr_margin-vw: 0.5vw;
+    --sr_size_px: 150px;
+    --sr_size-vw: 10vw;
+    --polygon_margin: calc(var(--sr_margin-px) + var(--sr_margin-vw));
+    --polygon_size: calc(var(--sr_size_px) + var(--sr_size-vw));
+    --polygon_gap: clamp(1.5rem, 3vw, 3rem);
+    --polygon_gap-50: calc(50% + var(--polygon_margin));
+    --polygon_gap-100: calc(100% + var(--polygon_margin));
+    --polygon_gap-50-neg: calc(var(--polygon_gap-50) * -1);
+    --polygon_gap-100-neg: calc(var(--polygon_gap-100) * -1);
+    --polygon_gap-neg: calc(var(--polygon_gap) * -1);
+    --srg_left: 20vw;
+    --srg_bottom: 120px;
     --side_indent: 110px;
 }
 
@@ -10,10 +32,10 @@ body {
     background: #F7F9FC;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
+/*html,*/
+/*body {*/
+/*    overflow-x: hidden;*/
+/*}*/
 
 footer {
     margin-top: 50px;

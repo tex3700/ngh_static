@@ -1,24 +1,10 @@
 @media (max-width: 1700px) {
-    .services-rectangle:hover p {
-        font-size: 11px;
-        transform: translate(1.7vw, -2.2vw);
-    }
-
     .card-description {
         font-size: 1em;
     }
 }
 
 @media (max-width: 1600px) {
-    .services-rectangle-group {
-        left: 50vw;
-        bottom: 260px;
-    }
-
-    .services-rectangle:hover .rectangle-description {
-        font-size: 11px;
-    }
-
     .card-description {
         font-size: 0.9em;
     }
@@ -28,32 +14,14 @@
 @media (max-width: 1500px) {
     html {
         --side_indent: 50px;
-    }
-
-    .services-rectangle-group {
-        left: 52vw;
-        bottom: 241px;
-    }
-
-    .services-rectangle {
-        width: 13vw;
-        height: 13vw;
-        box-sizing: border-box;
-        word-wrap: break-word;
-    }
-
-    .rectangle-link {
-        transform: translate(0.48vw, 3.8vw) rotate(-45deg);
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(1vw, -1.7vw);
+        --srg_bottom: 100px;
     }
 }
 
 @media (max-width: 1400px) {
     html {
         --side_indent: 20px;
+        --srg_bottom: 80px;
     }
 
     h1 {
@@ -66,16 +34,6 @@
 
     .main-article p {
         font-size: 1rem;
-    }
-
-    .services-rectangle {
-        width: 13.5vw;
-        height: 13.5vw;
-    }
-
-    .services-rectangle-group {
-        left: 50vw;
-        bottom: 185px;
     }
 
     .ma-vcard {
@@ -97,6 +55,11 @@
 }
 
 @media (max-width: 1300px) {
+    html {
+        --srg_left: 18vw;
+        --srg_bottom: 28px;
+    }
+
     .main-header {
         height: 734px;
     }
@@ -111,15 +74,6 @@
 
     .main-description {
         margin: 20vw 0 0 10vw;
-    }
-
-    .services-rectangle-group {
-        left: 50vw;
-        bottom: 167px;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(1.7vw, -2.2vw);
     }
 
     .reagent-card {
@@ -148,24 +102,6 @@
 }
 
 @media (max-width: 1200px) {
-    .services-rectangle {
-        width: 14.5vw;
-        height: 14.5vw;
-    }
-
-    .services-rectangle-group {
-        left: 51vw;
-        bottom: 130px;
-    }
-
-    .rectangle-link {
-        transform: translate(0.48vw, 4vw) rotate(-45deg);
-    }
-
-    /*.services-rectangle:hover p {*/
-    /*    transform: translate(1.7vw, -2.2vw);*/
-    /*}*/
-
     .services-description {
         max-width: 40vw;
         top: 38%;
@@ -200,26 +136,15 @@
 }
 
 @media (max-width: 1150px) {
-    .services-rectangle {
-        width: 15vw;
-        height: 15vw;
-    }
-
-    .services-rectangle-group {
-        left: 53vw;
-        bottom: 139px;
-    }
-
     .main-advantages-cards {
         gap: 5px;
     }
 }
 
 @media (max-width: 1100px) {
-
-    html,
-    body {
-        overflow-x: hidden;
+    html {
+        --srg_left: 16vw;
+        --srg_bottom: 10px;
     }
 
     h1 {
@@ -298,23 +223,12 @@
         height: 115px;
     }
 
-    .services-description {
-        top: 41%;
-    }
-
     .rectangle-text-link {
         font-size: 14px;
     }
 
-    .services-rectangle-group {
-        left: 51vw;
-        bottom: 121px;
-    }
-
-    .services-rectangle:hover p {
-        font-size: 12px;
-        transform: translate(0.9vw, -1.7vw);
-        margin-bottom: 5px;
+    .services-description {
+        top: 41%;
     }
 
     .foo-logo {
@@ -323,6 +237,12 @@
 }
 
 @media (max-width: 1050px) {
+    html {
+        --srg_left: 6vw;
+        --srg_bottom: -50px;
+        --sr_size-vw: 11vw;
+    }
+
     .main-logo-text {
         font-size: 1.8rem;
     }
@@ -331,20 +251,29 @@
         bottom: 919px;
     }
 
-    .services-rectangle {
-        width: 15.5vw;
-        height: 15.5vw;
+    .box-wrapper:nth-child(8) {
+        transform: unset;
     }
 
-    .services-rectangle-group {
-        left: 45vw;
-        bottom: 36px;
+    .box-wrapper.active:nth-child(8),
+    .box-wrapper:nth-child(8):hover {
+        transform: scale(1.1) translateX(-5%) translateY(-5%);
     }
 
-    .tr-centre {
-        right: 0;
-        left: 100%;
+    .box-wrapper:nth-child(7) {
+        transform: translateX(var(--polygon_gap-50)) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .box-wrapper.active:nth-child(7),
+    .box-wrapper:nth-child(7):hover {
+        transform: scale(1.1) translateX(calc(50% - 10% + var(--polygon_margin))) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .chem-f-2 {
+        width: 15%;
+        position: absolute;
         bottom: 0;
+        left: 10%;
     }
 
     #prev,
@@ -360,24 +289,6 @@
 
     .contacts-button {
         margin-right: 30px;
-    }
-
-    .services-rectangle {
-        width: 17vw;
-        height: 17vw;
-    }
-
-    .services-rectangle-group {
-        left: 44vw;
-        bottom: 0;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(0.8vw, -1.5vw);
-    }
-
-    .rectangle-link {
-        transform: translate(0.48vw, 4.5vw) rotate(-45deg);
     }
 
     .reagent-card img {
@@ -420,6 +331,12 @@
 }
 
 @media (max-width: 960px) {
+    html {
+        --srg_left: 4vw;
+        --srg_bottom: -80px;
+        --sr_size-vw: 12vw;
+    }
+
     .cover-rectangle-right-top {
         bottom: 870px;
     }
@@ -494,6 +411,12 @@
 }
 
 @media (max-width: 940px) {
+    html {
+        --srg_left: 2vw;
+        --srg_bottom: -90px;
+        --sr_size-vw: 12vw;
+    }
+
     .cover-rectangle-right-top {
         bottom: 881px;
     }
@@ -502,19 +425,6 @@
         top: 43%;
     }
 
-    .services-rectangle {
-        width: 17.5vw;
-        height: 17.5vw;
-    }
-
-    .rectangle-link {
-        transform: translate(0.48vw, 4.5vw) rotate(-45deg);
-    }
-
-    .services-rectangle-group {
-        left: 46vw;
-        bottom: 0;
-    }
 }
 
 @media (max-width: 920px) {
@@ -550,13 +460,12 @@
 }
 
 @media (max-width: 900px) {
-    .services-description {
-        top: 40%;
+    html {
+        --srg_left: 1vw;
     }
 
-    .services-rectangle-group {
-        left: 38vw;
-        bottom: 0;
+    .services-description {
+        top: 40%;
     }
 
     .ma-vcard {
@@ -566,6 +475,10 @@
 }
 
 @media (max-width: 880px) {
+    html {
+        --srg_left: 0.2vw;
+    }
+
     .cover-rectangle-right-top {
         bottom: 909px;
     }
@@ -646,88 +559,56 @@
         top: 42%;
     }
 
-    .services-rectangle {
-        width: 19vw;
-        height: 19vw;
-    }
-
-    .services-rectangle-group {
-        left: 44vw;
-        bottom: -5vw;
-    }
-
-    .rectangle-link {
-        transform: translate(0.48vw, 5vw) rotate(-45deg);
-    }
-
     .foo-body::before {
         background-position-x: center;
     }
 }
 
 @media (max-width: 860px) {
+    html {
+        --sr_size-vw: 10vw;
+    }
+
     .main-header {
         height: 685px;
         background-position-x: right;
     }
 
     .cover-rectangle-right-top {
-        bottom: 964px;
+        bottom: 864px;
     }
 
     .services-description {
         max-width: 60vw;
         left: 11%;
+        top: 42%;
     }
 
-    .services-rectangle-group {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        left: 21vw;
-        bottom: 18vw;
-    }
-
-    .services-rectangle {
-        width: 21vw;
-        height: 21vw;
-    }
-
-    .rectangle-link {
-        transform: translate(1vw, 6.5vw) rotate(-45deg);
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(2.6vw, -3.5vw);
-        margin-bottom: 20px;
-    }
-
-    .tr-left {
-        right: 0;
-        left: 100%;
-    }
-
-    .tr-centre {
-        right: unset;
-        bottom: unset;
-        left: 100%;
-    }
-
-    .twist-rectangle-end {
-        position: relative;
-        left: 92%;
-        bottom: 48%;
-    }
-
-    .subgroup-second {
-        margin: 48vw 0 0 -2vw;
+    .box-wrapper.active:nth-child(2),
+    .box-wrapper:nth-child(2):hover,
+    .box-wrapper.active:nth-child(3),
+    .box-wrapper:nth-child(3):hover,
+    .box-wrapper.active:nth-child(4),
+    .box-wrapper:nth-child(4):hover,
+    .box-wrapper.active:nth-child(5),
+    .box-wrapper:nth-child(5):hover,
+    .box-wrapper.active:nth-child(6),
+    .box-wrapper:nth-child(6):hover,
+    .box-wrapper.active:nth-child(7),
+    .box-wrapper:nth-child(7):hover,
+    .box-wrapper.active:nth-child(8),
+    .box-wrapper:nth-child(8):hover {
+        z-index: 10;
+        & p {
+            font-size: 11px;
+        }
+        & .rectangle-description {
+            font-size: 12px;
+        }
     }
 
     .main-services {
-        height: 1205px;
-    }
-
-    .services-description {
-        top: 33%;
+        height: 960px;
     }
 
     .ma-vcard {
@@ -737,14 +618,8 @@
 }
 
 @media (max-width: 840px) {
-    .services-rectangle {
-        width: 21.5vw;
-        height: 21.5vw;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(2.6vw, -3.5vw);
-        margin-bottom: 20px;
+    html {
+        --srg_left: 1vw;
     }
 
     .ma-vcard {
@@ -754,9 +629,32 @@
 }
 
 @media (max-width: 800px) {
-    .services-rectangle {
-        width: 22vw;
-        height: 22vw;
+    html {
+        --srg_left: 0.6vw;
+        --sr_margin-px: 2px;
+    }
+
+    .box-wrapper.active:nth-child(2),
+    .box-wrapper:nth-child(2):hover,
+    .box-wrapper.active:nth-child(3),
+    .box-wrapper:nth-child(3):hover,
+    .box-wrapper.active:nth-child(4),
+    .box-wrapper:nth-child(4):hover,
+    .box-wrapper.active:nth-child(5),
+    .box-wrapper:nth-child(5):hover,
+    .box-wrapper.active:nth-child(6),
+    .box-wrapper:nth-child(6):hover,
+    .box-wrapper.active:nth-child(7),
+    .box-wrapper:nth-child(7):hover,
+    .box-wrapper.active:nth-child(8),
+    .box-wrapper:nth-child(8):hover {
+        z-index: 10;
+        & p {
+            font-size: 10px;
+        }
+        & .rectangle-description {
+            font-size: 11px;
+        }
     }
 
     .ma-vcard {
@@ -777,21 +675,7 @@
     }
 
     .cover-rectangle-right-top {
-        bottom: 1000px;
-    }
-
-    .subgroup-second {
-        margin: 50vw 0 0 -2vw;
-    }
-
-    .services-rectangle {
-        width: 22.5vw;
-        height: 22.5vw;
-    }
-
-    .services-rectangle-group {
-        left: 15vw;
-        bottom: 19vw;
+        bottom: 880px;
     }
 
     .chem-f-2 {
@@ -859,11 +743,6 @@
         right: 16vw;
     }
 
-    .services-rectangle {
-        width: 23vw;
-        height: 23vw;
-    }
-
     .ma-vcard {
         height: 389px;
         min-width: 210px;
@@ -871,22 +750,10 @@
 }
 
 @media (max-width: 700px) {
-    .services-rectangle {
-        width: 24vw;
-        height: 24vw;
-    }
 
-    .subgroup-second {
-        margin: 365px 0 0 -2vw;
-    }
 }
 
 @media (max-width: 680px) {
-    .services-rectangle {
-        width: 25vw;
-        height: 25vw;
-    }
-
     .reagent-card-wrapper {
         padding-top: 210px;
     }
@@ -902,20 +769,6 @@
 }
 
 @media (max-width: 660px) {
-    .services-rectangle {
-        width: 26vw;
-        height: 26vw;
-    }
-
-    .rectangle-link {
-        transform: translate(1vw, 8vw) rotate(-45deg);
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(3.8vw, -3.5vw);
-        margin-bottom: 20px;
-    }
-
     .ma-vcard {
         height: 389px;
         min-width: 290px;
@@ -964,25 +817,6 @@
         display: flex;
     }
 
-    .services-rectangle {
-        width: 29vw;
-        height: 29vw;
-    }
-
-    .services-rectangle-group {
-        left: 12vw;
-        bottom: 10vw;
-    }
-
-    .subgroup-second {
-        margin: 392px 0 0 -2vw;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(2.4vw, -3vw);
-        margin-bottom: 20px;
-    }
-
     .reagent-card-wrapper {
         padding-top: 280px;
     }
@@ -994,11 +828,6 @@
 }
 
 @media (max-width: 620px) {
-    .services-rectangle {
-        width: 30vw;
-        height: 30vw;
-    }
-
     .ma-vcard {
         height: 389px;
         min-width: 270px;
@@ -1009,24 +838,6 @@
     .services-description {
         top: 32%;
         left: 9%;
-    }
-
-    .services-rectangle {
-        width: 31vw;
-        height: 31vw;
-    }
-
-    .tr-left {
-        right: 0;
-        left: 97%;
-    }
-
-    .rectangle-link {
-        transform: translate(0.3vw, 8vw) rotate(-45deg);
-    }
-
-    .subgroup-second {
-        margin: 400px 0 0 -2vw;
     }
 
     .reagent-card-wrapper {
@@ -1051,15 +862,6 @@
     .main-logo {
         height: 50px;
     }
-
-    .services-rectangle {
-        width: 32vw;
-        height: 32vw;
-    }
-
-    .subgroup-second {
-        margin: 388px 0 0 -2vw;
-    }
 }
 
 @media (max-width: 560px) {
@@ -1071,16 +873,6 @@
         max-width: 68vw;
         left: 7%;
         top: 34%;
-    }
-
-    .services-rectangle {
-        width: 33vw;
-        height: 33vw;
-    }
-
-    .services-rectangle-group {
-        left: 0;
-        bottom: 6vw;
     }
 
     .reagent-card-wrapper {
@@ -1111,11 +903,6 @@
         max-width: 67vw;
         left: 6%;
     }
-
-    .services-rectangle {
-        width: 34vw;
-        height: 34vw;
-    }
 }
 
 @media (max-width: 520px) {
@@ -1126,26 +913,6 @@
 
     .services-description {
         top: 32%;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(2.4vw, -3vw);
-        margin-bottom: 20px;
-        font-size: 10px;
-    }
-
-    .subgroup-second {
-        margin: 382px 0 0 -2vw;
-    }
-
-    .services-rectangle-group {
-        left: 0;
-        bottom: 10vw;
-    }
-
-    .services-rectangle {
-        width: 35vw;
-        height: 35vw;
     }
 
     .ma-vcard {
@@ -1159,22 +926,7 @@
 }
 
 @media (max-width: 500px) {
-    .subgroup-second {
-        margin: 375px 0 0 -2vw;
-    }
 
-    .rectangle-link {
-        transform: translate(0.3vw, 9vw) rotate(-45deg);
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(2.4vw, -3vw);
-    }
-
-    .services-rectangle {
-        width: 36vw;
-        height: 36vw;
-    }
 }
 
 @media (max-width: 480px) {
@@ -1186,14 +938,6 @@
         margin-right: 15px;
         padding: 5px 10px;
         font-size: 11px;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(4vw, -3vw);
-    }
-
-    .subgroup-second {
-        margin: 361px 0 0 -2vw;
     }
 
     .reagent-card-content {
@@ -1246,19 +990,6 @@
 @media (max-width: 460px) {
     .main-logo-text {
         font-size: 1.3rem;
-    }
-
-    .subgroup-second {
-        margin: 346px 0 0 -2vw;
-    }
-
-    .services-description {
-        top: 34%;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(4vw, -5vw);
-        margin-bottom: 15px;
     }
 
     .documents-slider {
@@ -1326,20 +1057,6 @@
         font-size: 1.5rem;
     }
 
-    .services-rectangle {
-        width: 37vw;
-        height: 37vw;
-    }
-
-    .subgroup-second {
-        margin: 340px 0 0 -2vw;
-    }
-
-    .services-rectangle-group {
-        left: -30px;
-        bottom: 104px;
-    }
-
     .reagent-card-wrapper {
         padding-top: 200px;
     }
@@ -1385,37 +1102,17 @@
 }
 
 @media (max-width: 420px) {
-    .services-rectangle {
-        width: 38vw;
-        height: 38vw;
-    }
 
-    .subgroup-second {
-        margin: 338px 0 0 -2vw;
-    }
 }
 
 @media (max-width: 410px) {
-    .services-rectangle {
-        width: 39vw;
-        height: 39vw;
-    }
+
 }
 
 @media (max-width: 400px) {
     .cover-rectangle-right-bottom {
         width: 47vw;
         height: 53%;
-    }
-
-    .services-rectangle-group {
-        left: -42px;
-        bottom: 104px;
-    }
-
-    .services-rectangle {
-        width: 40vw;
-        height: 40vw;
     }
 
     .documents-slider {
@@ -1437,44 +1134,12 @@
 }
 
 @media (max-width: 390px) {
-    .services-rectangle {
-        width: 41vw;
-        height: 41vw;
-    }
-
     .main-advantages-subheading {
         max-width: 84%;
     }
 }
 
 @media (max-width: 380px) {
-    .services-rectangle {
-        width: 42vw;
-        height: 42vw;
-    }
-
-    .services-rectangle-group {
-        left: -50px;
-        bottom: 104px;
-    }
-
-    .services-rectangle:hover p {
-        font-size: 9px;
-        transform: translate(2vw, -5vw);
-    }
-
-    .services-rectangle:hover .rectangle-description {
-        font-size: 10px;
-    }
-
-    .rectangle-link {
-        transform: translate(0.3vw, 10vw) rotate(-45deg);
-    }
-
-    .subgroup-second {
-        margin: 333px 0 0 -2vw;
-    }
-
     .documents-slider {
         width: 320px;
         height: 350px;
@@ -1498,14 +1163,6 @@
 }
 
 @media (max-width: 370px) {
-    .subgroup-second {
-        margin: 324px 0 0 -2vw;
-    }
-
-    .services-rectangle:hover p {
-        transform: translate(3vw, -5vw);
-    }
-
     .pagination-item {
         font-size: 11px;
     }
@@ -1533,10 +1190,6 @@
 }
 
 @media (max-width: 360px) {
-    .subgroup-second {
-        margin: 315px 0 0 -2vw;
-    }
-
     .foo-copyright {
         padding: 10px;
     }
