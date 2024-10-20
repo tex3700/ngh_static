@@ -11,6 +11,7 @@
     aspect-ratio: 8 / 8;
     position: absolute;
     left: var(--srg_left);
+    right: var(--srg_right);
     bottom: var(--srg_bottom);
 }
 

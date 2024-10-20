@@ -24,6 +24,7 @@ html {
     --polygon_gap-100-neg: calc(var(--polygon_gap-100) * -1);
     --polygon_gap-neg: calc(var(--polygon_gap) * -1);
     --srg_left: 20vw;
+    --srg_right: unset;
     --srg_bottom: 120px;
     --side_indent: 110px;
 }
