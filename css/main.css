@@ -27,16 +27,14 @@ html {
     --srg_right: unset;
     --srg_bottom: 120px;
     --side_indent: 110px;
+    --sr_rd_fsize: 13px;
+    --sr_p_fsize: 12px;
+    --sr_p_marginb: 10px;
 }
 
 body {
     background: #F7F9FC;
 }
-
-/*html,*/
-/*body {*/
-/*    overflow-x: hidden;*/
-/*}*/
 
 footer {
     margin-top: 50px;

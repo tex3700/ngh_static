@@ -230,31 +230,37 @@ li {
     display: block;
 }
 
+.ma-vcard.m-hover:nth-child(1),
 #mac-1:hover {
     background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("../img/drilling_engineer.jpg");
     background-size: cover;
 }
 
+.ma-vcard.m-hover:nth-child(2),
 #mac-2:hover {
     background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/labratory.webp");
     background-size: cover;
 }
 
+.ma-vcard.m-hover:nth-child(3),
 #mac-3:hover {
     background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/drilling_engineer.jpg");
     background-size: cover;
 }
 
+.ma-vcard.m-hover:nth-child(4),
 #mac-4:hover {
     background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/Enterprise_11.jpg");
     background-size: cover;
 }
 
+.ma-vcard.m-hover:nth-child(5),
 #mac-5:hover {
     background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/Delivery_service.jpg");
     background-size: cover;
 }
 
+.ma-vcard.m-hover:nth-child(6),
 #mac-6:hover {
     background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("../img/equipment.jpg");
 }
