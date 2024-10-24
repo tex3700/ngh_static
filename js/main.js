@@ -10,10 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const boxes = document.querySelectorAll(".box-wrapper");
+    const cards = document.querySelectorAll(".ma-vcard");
 
     function activateTab(box) {
         boxes.forEach((t) => t.classList.remove("active"));
         box.classList.add("active");
+    }
+
+    function hoverTab(card) {
+        cards.forEach((t) => t.classList.remove("m-hover"));
+        card.classList.add("m-hover");
     }
 
     boxes.forEach((box) => {
@@ -23,6 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         box.addEventListener("click", () => {
             activateTab(box);
+        });
+    });
+
+    cards.forEach((card) => {
+        card.addEventListener("mouseover", () => {
+            hoverTab(card);
+        });
+
+        card.addEventListener("click", () => {
+            hoverTab(card);
         });
     });
 });
