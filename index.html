@@ -25,6 +25,7 @@
     <link href="css/slider.css" rel="stylesheet" type="text/css">
     <link href="css/footer.css" rel="stylesheet" type="text/css">
     <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
 
     <script type="application/ld+json">
     {
@@ -84,6 +85,24 @@
         </section>
         <section class="main-menu-button">
             <button class="contacts-button" type="button" value="#">Написать</button>
+
+            <div class="modal-overlay"></div>
+            <div class="modal">
+                <form action="send_email.php" method="post">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="text">Сообщение:</label><br>
+                    <textarea id="text" name="text" required></textarea><br><br>
+
+                    <button type="submit">Отправить</button>
+                    <button type="button" class="cancel-button">Отменить</button>
+                </form>
+            </div>
+
             <section class="languages visibility-hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <mask id="mask0_18_270" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12"
@@ -721,6 +740,7 @@
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
