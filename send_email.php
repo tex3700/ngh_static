@@ -13,7 +13,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     // Authentication (if required)
     ini_set('SMTPAuth', 'LOGIN'); // Or 'PLAIN'
     ini_set('username', 'it@nghim.ru');
-    ini_set('password', 'aKtZrYi-Iu72');
+    ini_set('password', '');
 
     $to = 'it@nghim.ru';
     $subject = 'Сообщение с формы обратной связи';
