@@ -85,11 +85,18 @@
             <!--            <a class="menu-linc" href="#" target="_blank">Карьера</a>-->
         </section>
         <section class="main-menu-button">
+            <?php
+                // if (isset($_GET['status']) && $_GET['status'] === 'success') {
+                //     echo '<div class="success-message">Сообщение успешно отправлено!</div>';
+                //     header("Refresh: 5; url=/");
+                //     exit;
+                // }
+            ?>
             <button class="contacts-button" type="button" value="#">Написать</button>
 
             <div class="modal-overlay"></div>
             <div class="modal">
-                <form action="send_email.php" method="post">
+                <form action="src/send_email.php" method="post">
                     <h2>Оставьте Ваше сообщение</h2>
                     <label for="name">Пожалуйста представтесь:</label><br>
                     <input type="text" id="name" name="name" required placeholder="Ваше имя"><br><br>
@@ -97,7 +104,7 @@
                     <label for="email">Ваш Email:</label><br>
                     <input type="email" id="email" name="email" required placeholder="обязательное поле"><br><br>
 
-                    <label for="email">Ваш телефон:</label><br>
+                    <label for="phone">Ваш телефон:</label><br>
                     <input type="phone" id="phone" name="phone" placeholder="не обязательное поле"><br><br>
 
                     <label for="text">Ваше сообщение:</label><br>
