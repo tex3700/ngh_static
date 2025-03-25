@@ -1,4 +1,6 @@
 <?php
+require '../config.php';
+
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -14,7 +16,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     // Authentication (if required)
     ini_set('SMTPAuth', 'LOGIN'); // Or 'PLAIN'
     ini_set('username', 'it@nghim.ru');
-    ini_set('password', '');
+    ini_set('password', $_ENV['MAIL_PASSWORD'] ?? null);
 
     $to = 'it@nghim.ru,support@nghim.ru';
     $subject = 'Сообщение с формы обратной связи';
