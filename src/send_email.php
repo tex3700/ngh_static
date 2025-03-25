@@ -16,17 +16,16 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     ini_set('username', 'it@nghim.ru');
     ini_set('password', '');
 
-    $to = 'it@nghim.ru';
+    $to = 'it@nghim.ru,support@nghim.ru';
     $subject = 'Сообщение с формы обратной связи';
     $body = "Имя: $name\r\nEmail: $email\r\nТелефон: $phone\r\nСообщение:\r\n$message";
-    $headers = "From: it@nghim.ru" . "\r\n" .
+    $headers = "From: Формы обратной связи nghim.ru" . "\r\n" .
                "Reply-To: it@nghim.ru" . "\r\n" .
                "Content-Type: text/plain; charset=UTF-8\r\n" .
                "X-Mailer: PHP/" . phpversion();
 
     if (mail($to, $subject, $body, $headers)) {
-        header('Location: /index.php?status=success');
-        exit;
+        echo "Сообщение успешно отправлено.";
     } else {
         echo "Ошибка при отправке сообщения.";
     }
