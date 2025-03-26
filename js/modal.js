@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     modal.classList.remove('show');
                     modalOverlay.classList.remove('show');
-                }, 5000);
+                    location.reload();
+                }, 3000);
             })
             .catch(error => {
                 responseMessage.innerHTML = 'Ошибка при отправке сообщения.';

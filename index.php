@@ -107,18 +107,24 @@
             <div class="modal" id="cf-modal">
                 <form id="contactForm" action="src/send_email.php" method="post">
                     <h2>Оставьте Ваше сообщение</h2>
-                    <label for="name">Пожалуйста представтесь:</label><br>
-                    <input type="text" id="name" name="name" required placeholder="Ваше имя"><br><br>
+                    <div class="label-float">
+                        <input type="text" id="name" name="name" required placeholder=" " />
+                        <label for="name">Пожалуйста представтесь</label>
+                    </div>
 
-                    <label for="email">Ваш Email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="обязательное поле"><br><br>
+                    <div class="label-float">
+                        <input type="email" id="email" name="email" required placeholder=" " />
+                        <label for="email">Ваш Email</label>
+                    </div>
+                    
+                    <div class="label-float">
+                        <input type="phone" id="phone" name="phone" placeholder=" " />
+                        <label for="phone">Ваш телефон</label>
+                    </div>
 
-                    <label for="phone">Ваш телефон:</label><br>
-                    <input type="phone" id="phone" name="phone" placeholder="не обязательное поле"><br><br>
-
-                    <label for="text">Ваше сообщение:</label><br>
-                    <textarea id="text" name="text" required placeholder="текст сообщения здесь"></textarea><br><br>
-
+                    <!-- <label for="text">Ваше сообщение</label><br> -->
+                    <textarea id="text" name="text" required placeholder="Ваше сообщение:"></textarea><br><br>
+                    
                     <button type="submit">Отправить</button>
                     <button type="button" class="cancel-button">Отменить</button>
                 </form>
