@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(function () {
                     modal.classList.remove('show');
                     modalOverlay.classList.remove('show');
+                    window.location.reload;
                 }, 5000);
             })
             .catch(error => {
