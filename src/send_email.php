@@ -18,7 +18,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     ini_set('username', 'it@nghim.ru');
     ini_set('password', $_ENV['MAIL_PASSWORD'] ?? null);
 
-    $to = 'it@nghim.ru,support@nghim.ru';
+    $to = 'it@nghim.ru,support@nghim.ru,byzov@nghim.ru';
     $subject = 'Сообщение с формы обратной связи';
     $body = "Имя: $name\r\nEmail: $email\r\nТелефон: $phone\r\nСообщение:\r\n$message";
     $headers = "From: Формы обратной связи nghim.ru" . "\r\n" .
