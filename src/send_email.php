@@ -2,6 +2,13 @@
 require '../config.php';
 
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
+    $honeypot = $_POST['hp'] ?? '';
+
+    if (!empty($honeypot)) {
+        http_response_code(403);
+        die('Спам обнаружен!');
+    }
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['text'];
@@ -18,7 +25,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['text'])) {
     ini_set('username', 'it@nghim.ru');
     ini_set('password', $_ENV['MAIL_PASSWORD'] ?? null);
 
-    $to = 'it@nghim.ru,support@nghim.ru,byzov@nghim.ru';
+    $to = 'it@nghim.ru,support@nghim.ru';
     $subject = 'Сообщение с формы обратной связи';
     $body = "Имя: $name\r\nEmail: $email\r\nТелефон: $phone\r\nСообщение:\r\n$message";
     $headers = "From: Формы обратной связи nghim.ru" . "\r\n" .

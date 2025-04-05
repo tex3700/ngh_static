@@ -137,3 +137,9 @@
 #responseMessage {
     text-align: center;
 }
+
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}

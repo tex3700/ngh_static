@@ -123,7 +123,7 @@
                         <input type="phone" id="phone" name="phone" placeholder=" " />
                         <label for="phone">Ваш телефон</label>
                     </div>
-
+                    <input type="text" name="hp" class="hp-field">
                     <!-- <label for="text">Ваше сообщение</label><br> -->
                     <textarea id="text" name="text" required placeholder="Ваше сообщение:"></textarea><br><br>
                     
