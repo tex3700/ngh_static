@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <title>НГХ</title>
+    <meta name="description" content="ООО «НефтеГазХим» - подбор, производство и поставка химических реагентов для нефтегазовых компаний.">
     <meta property="og:type" content="business.business">
     <meta property="og:title" content="НефтеГазХим">
     <meta property="og:url" content="nghim.ru">
@@ -26,9 +27,10 @@
     <link href="css/footer.css" rel="stylesheet" type="text/css">
     <link href="css/modal.css" rel="stylesheet" type="text/css">
     <link href="css/media.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://nghim.ru/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico?v=1">
+    <script src="js/cookie-consent.js"></script>
 
     <script type="application/ld+json">
     {
@@ -62,6 +64,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/100586194" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
 </head>
 
 <body>
@@ -126,7 +129,9 @@
                     <input type="text" name="hp" class="hp-field">
                     <!-- <label for="text">Ваше сообщение</label><br> -->
                     <textarea id="text" name="text" required placeholder="Ваше сообщение:"></textarea><br><br>
-                    
+
+                    <!-- Поле для токена reCAPTCHA -->
+<!--                    <input type="/" name="g-recaptcha-response" id="g-recaptcha-response">-->
                     <button type="submit">Отправить</button>
                     <button type="button" class="cancel-button">Отменить</button>
                 </form>
@@ -771,6 +776,21 @@
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/modal.js"></script>
+    <div class="cookie-consent">
+      <div class="cc_text_container">
+        <div class="cookie-consent__text">
+          Мы используем cookie, чтобы улучшать работу сайта.
+        </div>
+        <a href="#" class="cookie-consent__link">Как это работает</a>
+      </div>
+      <button class="cookie-consent__button">Ок</button>
+    </div>
+    <div class="cookie-consent-policy-modal" id="cookiePolicyModal">
+      <div class="cookie-consent-policy-modal__content">
+        <button id="closeCookiePolicyModal" class="cookie-consent-policy-modal__close">&times;</button>
+        <?php include "policy/cookie-policy.php"?>
+      </div>
+    </div>
 </body>
 
 </html>
