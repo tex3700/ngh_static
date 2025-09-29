@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const formInputPhone = document.getElementById('phone');
     const spanPhoneError = document.getElementById('phone-error');
     const formTextarea = document.getElementById('text');
+    const checkboxAgree = document.querySelector('.checkbox-input-agree');
+    const checkboxAgreeError = document.getElementById('checkbox-error');
+    const checkboxAgreeContainer = document.querySelector('.agree-checkbox');
 
     contactsButton.addEventListener('click', () => {
         modal.classList.add('show');
@@ -99,81 +102,43 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    function validateTextarea(textarea) {
-        const errorSpan = document.getElementById('text-error');
-        const charCount = document.getElementById('char-count');
-        const charMax = document.getElementById('char-max');
-        const charCounter = textarea.parentElement.querySelector('.char-counter');
+    // Функция валидации чекбокса
+    function validateCheckbox() {
+        // Сбрасываем состояние ошибки
+        checkboxAgreeContainer.classList.remove('invalid');
+        checkboxAgreeError.style.display = 'none';
 
-        const value = textarea.value.trim();
-        const length = value.length;
-
-        // Обновляем счетчик символов
-        charCount.textContent = length;
-
-        // Сбрасываем классы
-        textarea.classList.remove('valid', 'invalid');
-        errorSpan.style.display = 'none';
-        charCounter.classList.remove('warning', 'error');
-
-        // Валидация при пустом поле (только если required)
-        if (textarea.hasAttribute('required') && value === '') {
-            textarea.classList.add('invalid');
-            errorSpan.textContent = 'Поле обязательно для заполнения';
-            errorSpan.style.display = 'block';
+        // Проверяем, отмечен ли чекбокс
+        if (!checkboxAgree.checked) {
+            checkboxAgreeContainer.classList.add('invalid');
+            checkboxAgreeError.textContent = 'Необходимо принять условия обработки персональных данных';
+            checkboxAgreeError.style.display = 'block';
             return false;
-        }
-
-        // Валидация минимальной длины
-        const minLength = parseInt(textarea.getAttribute('minlength')) || 10;
-        if (value !== '' && length < minLength) {
-            textarea.classList.add('invalid');
-            errorSpan.textContent = `Минимальная длина сообщения: ${minLength} символов`;
-            errorSpan.style.display = 'block';
-            return false;
-        }
-
-        // Валидация максимальной длины
-        const maxLength = parseInt(textarea.getAttribute('maxlength')) || 500;
-        if (length > maxLength) {
-            textarea.classList.add('invalid');
-            errorSpan.textContent = `Превышена максимальная длина: ${maxLength} символов`;
-            errorSpan.style.display = 'block';
-            charCounter.classList.add('error');
-            return false;
-        }
-
-        // Визуальные подсказки для счетчика
-        if (length > maxLength * 0.9) {
-            charCounter.classList.add('warning');
-        }
-
-        // Если все проверки пройдены
-        if (value !== '' && length >= minLength && length <= maxLength) {
-            textarea.classList.add('valid');
-            return true;
         }
 
         return true;
     }
 
-// Валидация при потере фокуса
-    formTextarea.addEventListener('blur', function() {
-        validateTextarea(this);
+    // Валидация при клике на чекбокс
+    checkboxAgree.addEventListener('change', function() {
+        if (this.checked) {
+            checkboxAgreeContainer.classList.remove('invalid');
+            checkboxAgreeError.style.display = 'none';
+        }
     });
-
-// Валидация при загрузке страницы (для предзаполненных полей)
-    document.addEventListener('DOMContentLoaded', function() {
-        validateTextarea(formTextarea);
-    });
-
-// Функция для проверки валидности перед отправкой формы
-    function isTextareaValid() {
-        return validateTextarea(formTextarea);
-    }
 
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault(); // Отменяем стандартную отправку формы
+
+        if (!validateCheckbox()) {
+            e.preventDefault(); // Останавливаем отправку формы
+            // Прокручиваем к чекбоксу для привлечения внимания
+            checkboxAgreeContainer.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
         // Создаем объект FormData для сериализации данных формы
         const formData = new FormData(this);
         // Отправляем данные через Fetch API

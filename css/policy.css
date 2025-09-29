@@ -182,7 +182,7 @@
 }
 
 /* policy checkbox */
-.custom-checkbox {
+.agree-checkbox {
     display: flex;
     align-items: flex-start;
     cursor: pointer;
@@ -193,7 +193,7 @@
     padding-left: 28px;
 }
 
-.checkbox-input {
+.checkbox-input-agree {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -213,12 +213,12 @@
     transition: all 0.2s ease;
 }
 
-.checkbox-input:checked ~ .checkbox-checkmark {
+.checkbox-input-agree:checked ~ .checkbox-checkmark {
     background-color: #007bff;
     border-color: #007bff;
 }
 
-.checkbox-input:checked ~ .checkbox-checkmark:after {
+.checkbox-input-agree:checked ~ .checkbox-checkmark:after {
     content: "";
     position: absolute;
     left: 5px;
@@ -243,6 +243,20 @@
     text-decoration: underline;
 }
 
-.checkbox-input:focus ~ .checkbox-checkmark {
+.checkbox-input-agree:focus ~ .checkbox-checkmark {
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Стили для ошибки */
+.checkbox-error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
 }

@@ -23,12 +23,12 @@
             </div>
             <input type="text" name="hp" class="hp-field">
             <label for="text" class="visibility-hidden">Ваше сообщение</label><br>
-            <textarea id="text" name="text" required placeholder="Ваше сообщение:" minlength="10" maxlength="500" oninput="validateTextarea(this)"></textarea>
+            <textarea id="text" name="text" required placeholder="Ваше сообщение:" minlength="10" maxlength="500"></textarea>
             <span class="error-message" id="text-error"></span>
 
             <div class="policy-box">
-                <label class="custom-checkbox">
-                    <input type="checkbox" class="checkbox-input" required>
+                <label class="agree-checkbox">
+                    <input type="checkbox" class="checkbox-input-agree">
                     <span class="checkbox-checkmark"></span>
                     <span class="checkbox-text">
                     Принимаю условия обработки персональных данных<br>
@@ -37,6 +37,7 @@
                     <a href="#" id="agree-policy-link" class="checkbox-link">Согласие на обработку персональных данных</a>
                   </span>
                 </label>
+                <span class="checkbox-error" id="checkbox-error"></span>
             </div>
 
             <br><br>
