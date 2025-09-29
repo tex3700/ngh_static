@@ -137,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 behavior: 'smooth',
                 block: 'center'
             });
+            return false;
         }
 
         // Создаем объект FormData для сериализации данных формы
