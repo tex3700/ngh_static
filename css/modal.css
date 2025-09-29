@@ -124,7 +124,7 @@
 }
 
 .label-float input:required:invalid+label:before {
-    content: '*';
+    content: '* ';
 }
 
 .label-float input:focus+label,

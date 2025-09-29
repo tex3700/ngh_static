@@ -38,22 +38,42 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Открытие модального окна политики cookie
-    const policyLink = document.querySelector('.cookie-consent__link');
-    const policyModal = document.getElementById('cookiePolicyModal');
-    const closePolicyModal = document.getElementById('closeCookiePolicyModal');
+    const cookiePolicyLink = document.querySelector('.cookie-consent__link');
+    const cookiePolicyModal = document.getElementById('cookiePolicyModal');
+    const closeCookiePolicyModal = document.getElementById('closeCookiePolicyModal');
 
-    if (policyLink && policyModal && closePolicyModal) {
-        policyLink.addEventListener('click', function(e) {
+    const confidencePolicyLink = document.getElementById('confidence-policy-link');
+    const confidencePolicyModal = document.getElementById('confidencePolicyModal');
+    const closeConfidencePolicyModal = document.getElementById('closeConfidencePolicyModal');
+
+    const agreePolicyLink = document.getElementById('agree-policy-link');
+    const agreePolicyModal = document.getElementById('agreePolicyModal');
+    const closeAgreePolicyModal = document.getElementById('closeAgreePolicyModal');
+
+    if (cookiePolicyLink && cookiePolicyModal && closeCookiePolicyModal) {
+        policyModalHandle(cookiePolicyLink, cookiePolicyModal, closeCookiePolicyModal);
+    }
+
+    if (confidencePolicyLink && confidencePolicyModal && closeConfidencePolicyModal) {
+        policyModalHandle(confidencePolicyLink, confidencePolicyModal, closeConfidencePolicyModal);
+    }
+
+    if (agreePolicyLink && agreePolicyModal && closeAgreePolicyModal) {
+        policyModalHandle(agreePolicyLink, agreePolicyModal, closeAgreePolicyModal);
+    }
+
+    function policyModalHandle(link, modal, closeModal) {
+        link.addEventListener('click', function(e) {
             e.preventDefault();
-            policyModal.style.display = 'flex';
+            modal.style.display = 'flex';
         });
-        closePolicyModal.addEventListener('click', function() {
-            policyModal.style.display = 'none';
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
         });
         // Закрытие по клику вне окна
-        policyModal.addEventListener('click', function(e) {
-            if (e.target === policyModal) {
-                policyModal.style.display = 'none';
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
             }
         });
     }
