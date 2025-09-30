@@ -21,10 +21,14 @@
                 <label for="phone">Ваш телефон</label>
                 <span class="error-message" id="phone-error"></span>
             </div>
+
             <input type="text" name="hp" class="hp-field">
-            <label for="text" class="visibility-hidden">Ваше сообщение</label><br>
-            <textarea id="text" name="text" required placeholder="Ваше сообщение:" minlength="10" maxlength="500"></textarea>
-            <span class="error-message" id="text-error"></span>
+
+            <div class="label-float textarea-wrap">
+                <textarea id="text" name="text" required placeholder=" " minlength="10" maxlength="500"></textarea>
+                    <label for="text" >Ваше сообщение:</label>
+                <span class="error-message" id="text-error"></span>
+            </div>
 
             <div class="policy-box">
                 <label class="agree-checkbox">

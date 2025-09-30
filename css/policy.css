@@ -208,14 +208,14 @@
     height: 18px;
     width: 18px;
     background-color: #fff;
-    border: 2px solid #007bff;
+    border: 2px solid rgba(6, 37, 91, 0.80);
     border-radius: 3px;
     transition: all 0.2s ease;
 }
 
 .checkbox-input-agree:checked ~ .checkbox-checkmark {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: rgba(6, 37, 91, 0.80);
+    border-color: rgba(6, 37, 91, 0.80);
 }
 
 .checkbox-input-agree:checked ~ .checkbox-checkmark:after {
@@ -231,11 +231,12 @@
 }
 
 .checkbox-text {
-    color: #333;
+    color: aliceblue;
+    margin-left: 15px;
 }
 
 .checkbox-link {
-    color: #007bff;
+    color: rgba(6, 37, 91, 0.80);
     text-decoration: none;
 }
 
@@ -259,4 +260,11 @@
     0%, 100% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
     75% { transform: translateX(5px); }
+}
+
+.policy-box {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 13px;
 }

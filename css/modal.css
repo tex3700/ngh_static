@@ -36,13 +36,14 @@
 
 .modal textarea {
     height: 7vw;
-    width: 100%;
+    width: 97%;
     margin-top: 13px;
     padding: 5px;
     background-color: #DA5D24;
     color: aliceblue;
     border-radius: 5px;
     font-size: 16px;
+    border-color: aliceblue;
 }
 
 .modal textarea::placeholder {
@@ -102,10 +103,31 @@
     color: transparent;
 }
 
+.label-float textarea:focus {
+    border: 2px solid rgba(6, 37, 91, 0.80);
+}
+
+.label-float textarea::placeholder {
+    color: transparent;
+}
+
 .label-float label {
     pointer-events: none;
     position: absolute;
     top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: #DA5D24;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.textarea-wrap label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(30% - 8px);
     left: 15px;
     transition: all .1s linear;
     -webkit-transition: all .1s linear;
@@ -127,10 +149,29 @@
     content: '* ';
 }
 
+.label-float textarea:required:invalid+label {
+    color: aliceblue;
+}
+
+.label-float textarea:focus:required:invalid {
+    border: 2px solid rgba(6, 37, 91, 0.80);
+}
+
+.label-float textarea:required:invalid+label:before {
+    content: '* ';
+}
+
 .label-float input:focus+label,
 .label-float input:not(:placeholder-shown)+label {
     font-size: 13px;
     top: 0;
+    color: aliceblue;
+}
+
+.label-float textarea:focus+label,
+.label-float textarea:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: 12px;
     color: aliceblue;
 }
 
