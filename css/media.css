@@ -103,6 +103,10 @@
     .modal button {
         margin-left: 12%;
     }
+
+    .main-menu a {
+        margin: 0 10px 0 10px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -295,6 +299,10 @@
     #prev,
     #next {
         top: 100%;
+    }
+
+    .main-menu a {
+        margin: 0 8px 0 8px;
     }
 }
 

@@ -6,6 +6,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Mulish';
+    src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2-variations');
+    src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+/*@font-face {*/
+/*    font-family: 'Source Sans Pro';*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2-variations');*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2') tech('variations');*/
+/*    font-weight: 100 1000;*/
+/*    font-stretch: 25% 151%;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Source Sans Pro';*/
+/*    src: url('../fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2');*/
+/*    font-weight: 100 1000;*/
+/*    font-style: normal;*/
+/*    font-stretch: 25% 151%;*/
+/*}*/
+
 .cover-rectangle-right-bottom {
     background-image: url("../img/Rectangle 34.png");
     background-origin: content-box;
