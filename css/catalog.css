@@ -66,3 +66,17 @@
 .qr-download-btn:hover {
     background: #0a3a8a;
 }
+
+@media (max-width: 580px) {
+    .media-hide-column {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .catalog-page {
+        max-width: 96%;
+        margin: 20px auto;
+        padding: 0;
+    }
+}

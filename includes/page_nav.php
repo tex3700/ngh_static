@@ -11,7 +11,8 @@ $products_list = getProducts();
         </label>
         <div id="sidebarMenu">
             <ul class="sidebarMenuInner">
-                <a class="menu-linc" href="/">Главная</a>
+                <li id="first-sidebar-item">Name <span>Position</span></li>
+                <li><a class="menu-linc" href="/">Главная</a></li>
                 <li class="menu-dropdown sidebar-dropdown">
                     <span class="menu-dropdown__toggle">Продукция</span>
                     <ul class="menu-dropdown__list">
@@ -20,7 +21,7 @@ $products_list = getProducts();
                         <?php endforeach; ?>
                     </ul>
                 </li>
-                <a class="menu-linc" href="#pagecontacts">Контакты</a>
+                <li><a class="menu-linc" href="#pagecontacts">Контакты</a></li>
             </ul>
         </div>
     </div>

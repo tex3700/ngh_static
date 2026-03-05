@@ -36,9 +36,9 @@ $products = getProducts();
     <table class="catalog-table">
         <thead>
             <tr>
-                <th>#</th>
+                <th class="media-hide-column">#</th>
                 <th>Наименование товара</th>
-                <th>Описание</th>
+                <th class="media-hide-column">Описание</th>
                 <th>QR-код страницы</th>
             </tr>
         </thead>
@@ -46,9 +46,9 @@ $products = getProducts();
             <?php $i = 1; ?>
             <?php foreach ($products as $product): ?>
             <tr>
-                <td><?php echo $i; ?></td>
+                <td class="media-hide-column"><?php echo $i; ?></td>
                 <td><a class="product-link" href="<?php echo htmlspecialchars($product['url']); ?>" target="_blank"><?php echo htmlspecialchars($product['name']); ?></a></td>
-                <td><span class="product-desc"><?php echo htmlspecialchars($product['description']); ?></span></td>
+                <td class="media-hide-column"><span class="product-desc"><?php echo htmlspecialchars($product['description']); ?></span></td>
                 <td class="qr-cell">
                     <div id="qr-wrap-<?php echo $i; ?>"></div>
                     <button class="qr-download-btn" onclick="downloadQR(<?php echo $i; ?>, '<?php echo htmlspecialchars($product['slug'], ENT_QUOTES); ?>')">↓ Скачать QR</button>
