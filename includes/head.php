@@ -26,6 +26,7 @@
     <link href="css/footer.css" rel="stylesheet" type="text/css">
     <link href="css/modal.css" rel="stylesheet" type="text/css">
     <link href="css/media.css" rel="stylesheet" type="text/css">
+    <link href="/css/page_nav.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="https://nghim.ru/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico?v=1">

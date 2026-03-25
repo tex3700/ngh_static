@@ -1,3 +1,7 @@
+<?php
+require_once 'products/ProductsModel.php';
+$products_list = getProducts();
+?>
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 
