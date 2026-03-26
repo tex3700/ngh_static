@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //logoImage.style.backgroundImage = "unset";
                 logoElement.style.marginTop = "20px";
                 logoElement.style.backgroundImage = 'url(../img/VecNGH1_S_1.svg)';
+                logoElement.style.backgroundPositionY = 'center';
                 //langElement.style.display = "none";
                 cButton.style.marginRight = "30px"
                 document.querySelectorAll(".main-menu .menu-linc").forEach(function (item) {
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 header.style.background = "none";
                 logoElement.style.backgroundImage = "unset";
                 logoElement.style.marginTop = "0";
+                logoElement.style.backgroundPositionY = 'inherit';
                 nameElement.textContent = "НефтеГазХим";
                 //logoImage.style.backgroundImage = 'url(../img/ngh-logo-colour.png)';
                 //langElement.style.display = "block";

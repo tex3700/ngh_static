@@ -120,9 +120,19 @@
     transform: rotate(180deg);
 }
 
+
+
 @media (max-width: 920px) {
     .sidebarIconToggle {
         top: -8px;
+    }
+
+    .sidebarMenu .menu-dropdown__list {
+        padding: 0;
+    }
+
+    .menu-dropdown__list li a {
+        padding: 0 16px;
     }
 
 }
