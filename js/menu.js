@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 logoElement.style.backgroundPositionY = 'center';
                 //langElement.style.display = "none";
                 cButton.style.marginRight = "30px"
-                document.querySelectorAll(".main-menu .menu-linc").forEach(function (item) {
+                document.querySelectorAll(".main-menu .menu-link").forEach(function (item) {
                     item.style.color = "#2F3034";
                 });
                 spinner.forEach(function (itemSpinner) {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //logoImage.style.backgroundImage = 'url(../img/ngh-logo-colour.png)';
                 //langElement.style.display = "block";
                 cButton.style.marginRight = "30px"
-                document.querySelectorAll(".main-menu .menu-linc").forEach(function (item) {
+                document.querySelectorAll(".main-menu .menu-link").forEach(function (item) {
                     item.style.color = "#FFF";
                 });
                 spinner.forEach(function (itemSpinner) {

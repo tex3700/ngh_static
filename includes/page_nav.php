@@ -12,7 +12,7 @@ $products_list = getProducts();
         <div id="sidebarMenu">
             <ul class="sidebarMenuInner">
                 <li id="first-sidebar-item">Name <span>Position</span></li>
-                <li><a class="menu-linc" href="/">Главная</a></li>
+                <li><a class="menu-link" href="/">Главная</a></li>
                 <li class="menu-dropdown sidebar-dropdown">
                     <span class="menu-dropdown__toggle">Продукция</span>
                     <ul class="menu-dropdown__list">
@@ -21,7 +21,7 @@ $products_list = getProducts();
                         <?php endforeach; ?>
                     </ul>
                 </li>
-                <li><a class="menu-linc" href="#pagecontacts">Контакты</a></li>
+                <li><a class="menu-link" href="#pagecontacts">Контакты</a></li>
             </ul>
         </div>
     </div>
@@ -31,16 +31,16 @@ $products_list = getProducts();
         </div>
     </a>
     <section class="main-menu">
-        <a class="menu-linc" href="/">Главная</a>
+        <a class="menu-link" href="/">Главная</a>
         <div class="menu-dropdown">
-            <span class="menu-linc menu-dropdown__toggle">Продукция</span>
+            <span class="menu-link menu-dropdown__toggle">Продукция</span>
             <ul class="menu-dropdown__list">
                 <?php foreach ($products_list as $product_item): ?>
                     <li><a href="<?= htmlspecialchars($product_item['url']) ?>"><?= htmlspecialchars($product_item['short_name']) ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </div>
-        <a class="menu-linc" href="#pagecontacts">Контакты</a>
+        <a class="menu-link" href="#pagecontacts">Контакты</a>
     </section>
 
     <?php include 'modal_contact_form.php'; ?>

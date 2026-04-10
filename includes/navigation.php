@@ -32,21 +32,21 @@
         </div>
     </a>
     <section class="main-menu">
-        <a class="menu-linc" href="#service">Сервис</a>
+        <a class="menu-link" href="#service">Сервис</a>
         <div class="menu-dropdown">
-            <span class="menu-linc menu-dropdown__toggle">Продукция</span>
+            <span class="menu-link menu-dropdown__toggle">Продукция</span>
             <ul class="menu-dropdown__list">
                 <?php foreach ($products_list as $product_item): ?>
                     <li><a href="<?= htmlspecialchars($product_item['url']) ?>"><?= htmlspecialchars($product_item['short_name']) ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </div>
-        <a class="menu-linc" href="#reagents">Применение</a>
-        <a class="menu-linc" href="#documents">Документация</a>
-        <a class="menu-linc" href="#contacts">Контакты</a>
-        <!--            <a class="menu-linc" href="#" target="_blank">Наша компания</a>-->
-        <!--            <a class="menu-linc" href="#" target="_blank">Наши клиенты</a>-->
-        <!--            <a class="menu-linc" href="#" target="_blank">Карьера</a>-->
+        <a class="menu-link" href="#reagents">Применение</a>
+        <a class="menu-link" href="#documents">Документация</a>
+        <a class="menu-link" href="#contacts">Контакты</a>
+        <!--            <a class="menu-link" href="#" target="_blank">Наша компания</a>-->
+        <!--            <a class="menu-link" href="#" target="_blank">Наши клиенты</a>-->
+        <!--            <a class="menu-link" href="#" target="_blank">Карьера</a>-->
     </section>
 
     <?php include 'modal_contact_form.php'; ?>
