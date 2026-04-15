@@ -67,6 +67,11 @@
     background: #0a3a8a;
 }
 
+.create-qr-link {
+    float: right;
+    text-decoration: none;
+}
+
 @media (max-width: 580px) {
     .media-hide-column {
         display: none;

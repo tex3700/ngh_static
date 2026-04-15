@@ -32,7 +32,10 @@ $products = getProducts();
 
 <div class="catalog-page">
     <a class="product-back-link" href="/">← Вернуться на главную</a>
+    <a class="product-back-link create-qr-link" href="/products/qr-generate/" style="float: right;"><h4>Сформировать QR →</h4></a>
+
     <h1>Каталог продукции</h1>
+
     <table class="catalog-table">
         <thead>
             <tr>
