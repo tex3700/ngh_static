@@ -28,11 +28,11 @@
 
         </section>
         <section class="cover-rectangle-right-bottom">
-            <img src="img/chemFormula1.png" class="chem-f-1" alt="surface solution chemical formula">
+            <img src="/img/pav_chem_formula.png" class="chem-f-1" alt="surface solution chemical formula">
         </section>
 
-        <img src="img/ravnovesie-desulfid-sulfid.jpg" class="chem-f-2" alt="Surface solution formula">
-        <img src="img/factory.svg" id="header-img" width="909" height="654">
+        <img src="/img/ravnovesie-desulfid-sulfid.jpg" class="chem-f-2" alt="Surface solution formula">
+        <img src="/img/factory.svg" id="header-img" width="909" height="654">
     </div>
 
     <div class="main-header">
@@ -73,7 +73,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
-                        <a class="rectangle-link" href="javascript:void(0)">
+                        <a class="rectangle-link" href="/products/dem-105">
                             <p>Деэмульгатор <br>ДЭМ 105-2</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">
@@ -87,7 +87,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
-                        <a class="rectangle-link" href="javascript:void(0)">
+                        <a class="rectangle-link" href="/products/iso-103">
                             <p>ИСО 103-3 <br>Ингибитор <br>солеотложений</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">
@@ -102,7 +102,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
-                        <a class="rectangle-link" href="javascript:void(0)">
+                        <a class="rectangle-link" href="/products/raspo-100">
                             <p>Растворитель <br>АСПО РАСПО 100-4</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">
@@ -117,6 +117,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
+                        <a class="rectangle-link" href="/products/ikor-106">
                         <p>ИКОР 106-5<br>Ингибитор коррозии</p>
                         <div class="cross-stitch"></div>
                         <p class="rectangle-description">
@@ -124,6 +125,7 @@
                             коррозионного
                             воздействия на нефтепромысловое оборудование.
                         </p>
+                        </a>
                     </div>
                     <div class="box-background"></div>
                 </div>
@@ -131,7 +133,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
-                        <a class="rectangle-link" href="javascript:void(0)">
+                        <a class="rectangle-link" href="/products/iaspo-102">
                             <p>Ингибитор <br>АСПО ИАСПО 102-6</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">
@@ -146,7 +148,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
-                        <a class="rectangle-link" href="javascript:void(0)">
+                        <a class="rectangle-link" href="/products/ptp-104">
                             <p>ПТП 104-7 <br>Противотурбулентная <br>присадка</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">
@@ -161,7 +163,7 @@
             <div class="box-wrapper">
                 <div class="services-rectangle">
                     <div class="box-content">
-                        <a class="rectangle-link" href="javascript:void(0)">
+                        <a class="rectangle-link" href="/products/drp-101">
                             <p>ДРП 101-8 <br>Депрессорная <br>присадка</p>
                             <div class="cross-stitch"></div>
                             <p class="rectangle-description">

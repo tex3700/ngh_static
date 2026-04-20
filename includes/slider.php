@@ -2,12 +2,12 @@
     <div id="slider">
         <div class="slide">
                             <span class="slide-img">
-                                <img src="img/KSP-201.png" alt="Контейнеры скважинные погружные">
+                                <img src="/img/KSP-201-2.png" alt="Контейнеры скважинные погружные">
                             </span>
             <span class="slide-description">
-                                <h3 class="sl-heading">
+                                <a href="/products/ksp-201"><h3 class="sl-heading">
                                     Контейнеры скважинные погружные КСП 201
-                                </h3>
+                                </h3></a>
                                 <p class="sl-description">
                                     Контейнер устанавливается под глубинно-насосным оборудованием во время его монтажа
                                     на скважине.
@@ -19,7 +19,7 @@
         </div>
         <div class="slide">
                             <span class="slide-img">
-                                <img src="img/UDR-210.png" alt="Установка дозирования реагента">
+                                <img src="/img/UDR-210.png" alt="Установка дозирования реагента">
                             </span>
             <span class="slide-description">
                                 <h3 class="sl-heading">
