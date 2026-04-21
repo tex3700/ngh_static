@@ -19,7 +19,7 @@
         </div>
         <div class="slide">
                             <span class="slide-img">
-                                <img src="/img/UDR-210.png" alt="Установка дозирования реагента">
+                                <img src="/img/UDR-210-2.png" alt="Установка дозирования реагента">
                             </span>
             <span class="slide-description">
                                 <h3 class="sl-heading">
