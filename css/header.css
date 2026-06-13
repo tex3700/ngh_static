@@ -28,7 +28,7 @@
 
 .main-logo {
     width: 20vw;
-    height: 55px;
+    height: 68px;
     /*margin-top: 20px;*/
     /* background-image: url("../img/VecNGH1_22_263 1.svg"); */
     background-size: contain;
@@ -65,7 +65,7 @@
     margin-top: 18px;
 }
 
-.main-menu a {
+.main-menu .menu-link {
     text-decoration: none;
     color: #FFF;
     font-family: Source Sans Pro, sans-serif;
@@ -75,7 +75,7 @@
     line-height: 18px;
     /* 120% */
     letter-spacing: 0.2px;
-    margin: 0 8px 0 8px;
+    margin: 0 18px 0 18px;
 }
 
 .main-menu a:hover {

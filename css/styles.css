@@ -1,3 +1,35 @@
+/* @import url('https://fonts.googleapis.com/css2?family=CoFo+Sans:wght@400;500;700&display=swap'); */
+@font-face {
+    font-family: 'CoFoSans';
+    src: url('../fonts/CoFoSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2-variations');
+    src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+/*@font-face {*/
+/*    font-family: 'Source Sans Pro';*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2-variations');*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2') tech('variations');*/
+/*    font-weight: 100 1000;*/
+/*    font-stretch: 25% 151%;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Source Sans Pro';*/
+/*    src: url('../fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2');*/
+/*    font-weight: 100 1000;*/
+/*    font-style: normal;*/
+/*    font-stretch: 25% 151%;*/
+/*}*/
+
 .cover-rectangle-right-bottom {
     background-image: url("../img/Rectangle 34.png");
     background-origin: content-box;
@@ -307,7 +339,7 @@ li {
 
 .documents-slider {
     position: relative;
-    background: no-repeat bottom url("../img/Group\ 2367.svg");
+    background: no-repeat bottom url("../img/Group 2367.svg");
     background-size: contain;
     width: 578px;
     height: 601px;

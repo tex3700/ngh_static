@@ -32,6 +32,36 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // --- Двойной клик на мобильных для карточек продуктов ---
+    const isTouchDevice = () => window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
+    document.querySelectorAll('.rectangle-link').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            if (!isTouchDevice()) return; // на десктопе не вмешиваемся
+
+            const boxWrapper = this.closest('.box-wrapper');
+
+            if (!boxWrapper.classList.contains('active')) {
+                // Первый клик — показываем описание, блокируем переход
+                e.preventDefault();
+                // activateTab уже добавит active через всплытие,
+                // но на случай если нет — добавляем явно:
+                boxes.forEach((t) => t.classList.remove("active"));
+                boxWrapper.classList.add('active');
+            }
+            // Второй клик — active уже есть, переход происходит штатно
+        });
+    });
+
+// Клик вне карточек снимает active (на мобильных)
+    document.addEventListener('click', function (e) {
+        if (!isTouchDevice()) return;
+        if (!e.target.closest('.box-wrapper')) {
+            boxes.forEach((bw) => bw.classList.remove('active'));
+        }
+    });
+// --- конец блока ---
+
     cards.forEach((card) => {
         card.addEventListener("mouseover", () => {
             hoverTab(card);

@@ -103,6 +103,10 @@
     .modal button {
         margin-left: 12%;
     }
+
+    .main-menu a {
+        margin: 0 10px 0 10px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -150,6 +154,10 @@
 @media (max-width: 1150px) {
     .main-advantages-cards {
         gap: 5px;
+    }
+
+    .main-logo-text {
+        font-size: 1.7rem;
     }
 }
 
@@ -250,6 +258,10 @@
     .modal button {
         margin-left: 5%;
     }
+
+    .main-menu .menu-linc {
+        margin: 0 10px 0 10px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -295,6 +307,10 @@
     #prev,
     #next {
         top: 100%;
+    }
+
+    .main-menu a {
+        margin: 0 8px 0 8px;
     }
 }
 
@@ -884,10 +900,15 @@
 
     .main-logo-text {
         font-size: 1.6rem;
+        margin-bottom: 3px;
     }
 
     .main-logo {
-        height: 50px;
+        height: 60px;
+    }
+
+    .sidebarIconToggle {
+        top: 3px;
     }
 
     .cover-rectangle-right-top {
