@@ -37,29 +37,34 @@ document.addEventListener('DOMContentLoaded', function() {
         return null;
     }
 
-    // Открытие модального окна политики cookie
-    const cookiePolicyLink = document.querySelector('.cookie-consent__link');
+    const cookiePolicyLinks = document.querySelectorAll('.cookie-consent__link');
     const cookiePolicyModal = document.getElementById('cookiePolicyModal');
     const closeCookiePolicyModal = document.getElementById('closeCookiePolicyModal');
 
-    const confidencePolicyLink = document.getElementById('confidence-policy-link');
+    const confidencePolicyLinks = document.querySelectorAll('#confidence-policy-link');
     const confidencePolicyModal = document.getElementById('confidencePolicyModal');
     const closeConfidencePolicyModal = document.getElementById('closeConfidencePolicyModal');
 
-    const agreePolicyLink = document.getElementById('agree-policy-link');
+    const agreePolicyLinks = document.querySelectorAll('#agree-policy-link');
     const agreePolicyModal = document.getElementById('agreePolicyModal');
     const closeAgreePolicyModal = document.getElementById('closeAgreePolicyModal');
 
-    if (cookiePolicyLink && cookiePolicyModal && closeCookiePolicyModal) {
-        policyModalHandle(cookiePolicyLink, cookiePolicyModal, closeCookiePolicyModal);
+    if (cookiePolicyLinks.length > 0 && cookiePolicyModal && closeCookiePolicyModal) {
+        cookiePolicyLinks.forEach(link => {
+            policyModalHandle(link, cookiePolicyModal, closeCookiePolicyModal);
+        });
     }
 
-    if (confidencePolicyLink && confidencePolicyModal && closeConfidencePolicyModal) {
-        policyModalHandle(confidencePolicyLink, confidencePolicyModal, closeConfidencePolicyModal);
+    if (confidencePolicyLinks.length > 0 && confidencePolicyModal && closeConfidencePolicyModal) {
+        confidencePolicyLinks.forEach(link => {
+            policyModalHandle(link, confidencePolicyModal, closeConfidencePolicyModal);
+        });
     }
 
-    if (agreePolicyLink && agreePolicyModal && closeAgreePolicyModal) {
-        policyModalHandle(agreePolicyLink, agreePolicyModal, closeAgreePolicyModal);
+    if (agreePolicyLinks.length > 0 && agreePolicyModal && closeAgreePolicyModal) {
+        agreePolicyLinks.forEach(link => {
+            policyModalHandle(link, agreePolicyModal, closeAgreePolicyModal);
+        });
     }
 
     function policyModalHandle(link, modal, closeModal) {
